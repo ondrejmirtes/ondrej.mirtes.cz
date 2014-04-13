@@ -1,0 +1,16 @@
+---
+layout: main
+title: Ondřej Mirtes
+active: homepage
+---
+
+{% for post in site.posts %}
+	{% if forloop.index > site.homepage_limit %}
+		{% break %}
+	{% endif %}
+	{% include article.html article=post link=true content=post.content %}
+{% endfor %}
+
+<p class="more">
+	<a href="{{ site.data['archives'].last.url }}" class="next">Archiv</a>
+</p>

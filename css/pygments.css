@@ -1,0 +1,4 @@
+.c, .c1, .cm, .cp, .cs { color: #888888; font-style: italic } /* Comment */
+.k, .kc, .kd, .kn, .kp, .kr, .kt, .nt { font-weight: bold } /* Keyword */
+.m { color: #666666 } /* Literal.Number */
+.s, .s1, .sb, .sc, .sd, .s2, .se, .sh, .si { color: #BA2121 } /* Literal.String */

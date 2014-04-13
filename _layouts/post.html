@@ -1,0 +1,32 @@
+---
+layout: main
+---
+
+{% include article.html article=page content=content %}
+
+{% assign previousIterationPost = null %}
+{% assign prevpost = null %}
+{% assign nextpost = null %}
+{% for post in site.posts %}
+	{% if post.url == page.url %}
+		{% assign prevpost = previousIterationPost %}
+	{% endif %}
+	{% if previousIterationPost.url == page.url %}
+		{% assign nextpost = post %}
+	{% endif %}
+	{% if prevpost and nextpost %}
+		{% break %}
+	{% endif %}
+	{% assign previousIterationPost = post %}
+{% endfor %}
+
+{% if prevpost or nextpost %}
+	<p class="more">
+		{% if prevpost %}
+			<a href="{{ prevpost.url | remove: '.html' }}" class="prev">{{ prevpost.title }}</a>
+		{% endif %}
+		{% if nextpost %}
+			<a href="{{ nextpost.url | remove: '.html' }}" class="next">{{ nextpost.title }}</a>
+		{% endif %}
+	</p>
+{% endif %}

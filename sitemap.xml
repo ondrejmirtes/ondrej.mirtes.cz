@@ -1,0 +1,30 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>{{ site.baseurl }}/</loc>
+		<priority>1</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+	<url>
+		<loc>{{ site.baseurl }}/o-mne</loc>
+		<priority>1</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+	<url>
+		<loc>{{ site.baseurl }}/nette-guru</loc>
+		<priority>1</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+
+	{% for post in site.posts %}
+		<url>
+			<loc>{{ site.baseurl }}{{ post.url | remove: '.html' }}</loc>
+			<priority>1</priority>
+			<changefreq>hourly</changefreq>
+		</url>
+	{% endfor %}
+</urlset>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="/apple-touch-icon-precomposed.png" />
+    <meta property="og:title" content="{% if page.title == 'Ondřej Mirtes' %}{{ page.title }}{% else %}{{ page.title }} | Ondřej Mirtes{% endif %}" />
+    <meta property="og:url" content="{{ page.url | remove: '.html' }}" />
+    <meta property="og:site_name" content="Ondřej Mirtes" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:site" content="@OndrejMirtes">
+    <title>{% if page.title == 'Ondřej Mirtes' %}{{ page.title }}{% else %}{{ page.title }} | Ondřej Mirtes{% endif %}</title>
+
+{% css_asset_tag global %}
+- /css/main.css
+- /css/pygments.css
+{% endcss_asset_tag %}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+    <link href="/rss" rel="alternate" type="application/rss+xml" title="RSS">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" media="all" href="/css/ie.css">
+    <![endif]-->
+    <script type="text/javascript" src="/js/analytics.js"></script>
+    <script type="text/javascript">
+        _ga.create("UA-1201863-3", ".ondrej.mirtes.cz");
+        _gaq.push(['_trackPageview']);
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <nav id="accessibility-nav">
+        <ol>
+            <li><a href="#navigation">Přejít k navigaci</a></li>
+            <li><a href="#content">Přejít na obsah</a></li>
+            <li><a href="#sidebar">Přejít k postrannímu sloupci</a></li>
+            <li><a href="http://www.ippi.cz/klavesove-zkratky/zakladni.html" accesskey="1">Klávesové zkratky</a>
+        </ol>
+    </nav>
+    <!-- / accessibility-nav -->
+    <hr />
+
+    <header id="header">
+
+        <div class="inner">
+
+            <h1 class="site-name"><a href="/" rel="home" title="Přejít na homepage" accesskey="2"><img src="/gfx/logo.png" alt="Ondřej Mirtes" width="276" height="44"></a></h1>
+
+            <nav class="links">
+                <a href="/rss" class="icon icon-rss" title="RSS">RSS</a>
+                <a href="https://twitter.com/OndrejMirtes" class="icon icon-twitter" title="Twitter">Twitter</a>
+            </nav>
+            <!-- / links -->
+
+        </div>
+        <!-- / inner -->
+
+    </header>
+    <!-- / header -->
+    <hr />
+
+    <div id="container">
+
+    <aside id="sidebar">
+
+        <nav id="navigation">
+            <ul>
+                <li{% if page.active == 'homepage' %} class="active"{% endif %}><a href="/">Homepage</a></li>
+                <li{% if page.active == 'archive' %} class="active"{% endif %}>
+                	<a href="{{ site.data['archives'].last.url }}">Archiv</a>
+                	{% if page.active == 'archive' %}
+	                	<ul class="submenu">
+							{% for archive_page in site.data['archives'] reversed %}
+								<li{% if archive_page.year == page.year %} class="active"{% endif %}>
+									<a href="{{ archive_page.url }}">
+										<span class="count">({{ archive_page.posts.size }})</span> {{ archive_page.year }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+                </li>
+                <li{% if page.active == 'about' %} class="active"{% endif %}><a rel="author" href="/o-mne">O mně</a></li>
+            </ul>
+
+			{% if page.active == 'archive' %}
+				<form action="" method="get">
+					<select class="submenu" id="frm-archiveForm">
+						{% for archive_page in site.data['archives'] reversed %}
+							<option{% if archive_page.year == page.year %} selected="selected"{% endif %} value="{{ archive_page.url }}">{{ archive_page.title_short }} ({{ archive_page.posts.size }})</option>
+						{% endfor %}
+					</select>
+				</form>
+			{% endif %}
+        </nav>
+        <!-- / navigation -->
+        <hr />
+
+    </aside>
+    <!-- / sidebar -->
+    <hr />
+
+    <section id="content">
+
+        {{ content }}
+
+    </section>
+    <!-- / content -->
+    <hr />
+
+    </div>
+    <!-- / container -->
+
+    <footer id="footer">
+
+        <div class="inner">
+
+            &copy; 2012&ndash;{{ site.time | date: '%Y' }} Ondřej Mirtes
+
+        </div>
+        <!-- / inner -->
+
+    </footer>
+    <!-- / footer -->
+
+{% javascript_asset_tag global %}
+- /js/jquery.js
+- /js/main.js
+{% endjavascript_asset_tag %}
+
+</div>
+<!-- / wrapper -->
+
+</body>
+</html>

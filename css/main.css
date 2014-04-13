@@ -1,0 +1,751 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a,
+ins,
+del {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  vertical-align: top;
+}
+th {
+  text-align: left;
+}
+/* 1.2 HTML5 Elements
+------------------------------------------------------------------------------*/
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+/* 1.3 Accessibility Navigation & Hide
+------------------------------------------------------------------------------*/
+#accessibility-nav,
+.hide {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  height: 1px;
+  width: 1px;
+}
+/* 1.4 Clear floated elements
+------------------------------------------------------------------------------*/
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after,
+#container:after,
+.more:after {
+  clear: both;
+  content: '&nbsp;';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+#accessibility-nav,
+.hide {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  height: 1px;
+  width: 1px;
+}
+/* 1.5 Default styles
+------------------------------------------------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font: 17px/32px Georgia, "New York CE", utopia, sans-serif;
+  background: #fff;
+  color: #222;
+}
+hr {
+  display: none;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+del {
+  text-decoration: line-through;
+}
+th {
+  font-weight: normal;
+}
+address,
+cite,
+dfn {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+abbr,
+acronym {
+  border-bottom: 1px dotted #999;
+  cursor: help;
+}
+input,
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a,
+a:visited {
+  border-bottom: 1px dotted #444;
+  color: #c41700;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a.no-borders,
+.no-borders a {
+  border: 0;
+  color: #c41700;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Segoe UI', 'Geneva CE', lucida, sans-serif;
+  font-weight: normal;
+  color: #c41700;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+h2,
+h3 {
+  margin: 0 0 5px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  padding: 0 0 32px;
+}
+ol,
+ul {
+  padding: 0 0 32px;
+}
+ul li {
+  position: relative;
+  padding: 0 0 0 38px;
+}
+ul li:before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  display: block;
+  width: 3px;
+  height: 3px;
+  overflow: hidden;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #c41700;
+}
+ol li {
+  list-style: upper-roman inside;
+}
+blockquote {
+  position: relative;
+  padding: 0 0 0 35px;
+  top: 5px;
+  font-style: italic;
+}
+blockquote p:first-of-type:first-letter {
+  float: none;
+  padding: 0;
+  font-size: 17px;
+}
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  font-size: 50px;
+}
+blockquote p {
+	padding: 0 0 24px;
+}
+img {
+  max-width: 100%;
+}
+/* 2. COMMON
+--------------------------------------------------------------------------------
+==============================================================================*/
+/* 2.1 Container
+------------------------------------------------------------------------------*/
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}
+body > .wrapper {
+  height: auto;
+}
+#container {
+  width: 850px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 51px;
+}
+.inner {
+  position: relative;
+  width: 850px;
+  margin: 0 auto;
+}
+/* 2.2 Header
+------------------------------------------------------------------------------*/
+#header {
+  margin: 0 0 55px;
+  background-image: url(../gfx/retina_line.png), url(../gfx/retina_pattern.png);
+  background-repeat: repeat-x, repeat;
+  background-position: 0 bottom, 0 0;
+  background-size: 4px 1px, 64px 64px;
+}
+#header .site-name {
+  position: relative;
+  text-decoration: none;
+}
+#header .site-name a {
+  display: block;
+  padding: 49px 0 40px;
+  border: 0;
+}
+#header .site-name a img {
+  display: block;
+  margin: 0 auto;
+}
+#header .inner {
+  text-align: center;
+}
+.links {
+  width: 89px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  margin: 0 0 0 -44px;
+  overflow: hidden;
+  line-height: 100px;
+}
+.links a {
+  z-index: 1;
+  border: 0;
+  float: left;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  background-image: url(../gfx/sprite.png);
+  background-repeat: no-repeat;
+}
+.links a.icon-rss {
+  margin-right: 17px;
+  background-position: 0 0;
+}
+.links a.icon-rss:hover {
+  background-position: 0 -36px;
+}
+.links a.icon-twitter {
+  background-position: -36px 0;
+}
+.links a.icon-twitter:hover {
+  background-position: -36px -36px;
+}
+/* 2.3 Navigation
+------------------------------------------------------------------------------*/
+#navigation {
+  text-align: right;
+  font-family: 'Segoe UI', 'Geneva CE', lucida, sans-serif;
+}
+#navigation ul {
+  font-size: 24px;
+  line-height: 40px;
+}
+#navigation ul li {
+  padding: 0;
+}
+#navigation ul li a {
+  border: 0;
+  color: #333;
+}
+#navigation ul li a .count {
+  font-size: 14px;
+  color: #c41700;
+}
+#navigation ul li a:hover {
+  color: #c41700;
+}
+#navigation ul li ul {
+  padding: 0;
+  font-size: 18px;
+}
+#navigation ul li.active > a {
+  color: #c41700;
+}
+#navigation ul li:before {
+  display: none;
+}
+select.submenu {
+  display: none;
+}
+/* 2.4 Content
+------------------------------------------------------------------------------*/
+#content {
+  position: relative;
+  float: right;
+  width: 666px;
+  top: 4px;
+}
+/* 2.5 Sidebar
+------------------------------------------------------------------------------*/
+#sidebar {
+  position: relative;
+  float: left;
+  width: 160px;
+}
+/* 2.6 Footer
+------------------------------------------------------------------------------*/
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 51px;
+  text-align: center;
+  font: 400 14px/51px 'Segoe UI', 'Geneva CE', lucida, sans-serif;
+  background-image: url(../gfx/retina_line.png), url(../gfx/retina_pattern.png);
+  background-repeat: repeat-x, repeat;
+  background-size: 4px 1px, 64px 64px;
+}
+/* 3. PAGES
+--------------------------------------------------------------------------------
+==============================================================================*/
+/* 3.1 Home page
+------------------------------------------------------------------------------*/
+.article {
+  position: relative;
+  margin: 0 0 32px;
+  padding: 0 37px 1px;
+  background: url(../gfx/retina_line.png) 0 bottom repeat-x;
+  background-size: 4px 1px;
+}
+.article.no-line {
+  background: none;
+}
+.article h2,
+.article h3 {
+  padding: 0 100px 0 0;
+}
+.article h2 a,
+.article h3 a {
+  border: 0;
+}
+.article h2 a:hover,
+.article h3 a:hover {
+  border-bottom: 1px dotted #444;
+}
+.article h2 + time,
+.article h3 + time {
+  position: absolute;
+  right: 37px;
+  top: 8px;
+  font: 300 14px/18px 'Open Sans', Arial, sans-serif;
+}
+.article h2 + time a,
+.article h3 + time a {
+  border: 0;
+  color: #999;
+}
+.article h2 + time a:hover,
+.article h3 + time a:hover {
+  border-bottom: 1px dotted #444;
+}
+.article p:first-of-type:first-letter {
+  float: left;
+  padding: 15px 10px 3px 0;
+  font-size: 58px;
+}
+.article blockquote p:first-of-type:first-letter {
+  float: none;
+  padding: 0;
+  font-size: 17px;
+}
+.article.no-initial p:first-of-type:first-letter, p.no-initial:first-of-type:first-letter {
+  float: none;
+  padding: 0;
+  font-size: 17px;
+}
+.arr a:after {
+  position: relative;
+  top: -3px;
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 7px;
+  margin: 0 0 0 11px;
+  overflow: hidden;
+  background-image: url(../gfx/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -25px -72px;
+}
+p.more {
+  padding: 0 37px 0;
+  font: 300 17px 'Open Sans', Arial, sans-serif;
+}
+p.more a {
+	margin-bottom: 32px;
+}
+p.more a.next {
+  float: right;
+  border: 0;
+  color: #666;
+  padding-left: 15px;
+}
+p.more a.next:after {
+  position: relative;
+  top: -2px;
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 7px;
+  margin: 0 0 0 11px;
+  overflow: hidden;
+  background-image: url(../gfx/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -72px;
+}
+p.more a.next:hover {
+  color: #c41700;
+}
+p.more a.next:hover:after {
+  background-position: -25px -72px;
+}
+p.more a.prev {
+  float: left;
+  border: 0;
+  color: #666;
+  padding-right: 15px;
+}
+p.more a.prev:before {
+  position: relative;
+  top: -2px;
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 7px;
+  margin: 0 11px 0 0;
+  overflow: hidden;
+  background-image: url(../gfx/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -80px;
+}
+p.more a.prev:hover {
+  color: #c41700;
+}
+p.more a.prev:hover:before {
+  background-position: -25px -80px;
+}
+div.code {
+	padding-bottom: 32px;
+}
+pre {
+  overflow: auto;
+  background-color: #efefef;
+  padding: 8px 16px;
+  line-height: 16px;
+  margin-bottom: 32px;
+}
+code {
+  font-family: Consolas, Courier, Courier New, monospace;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .links a {
+    background-image: url(../gfx/sprite@2.png);
+    background-size: 72px 87px;
+  }
+  .arr a:after {
+    background-image: url(../gfx/sprite@2.png);
+    background-size: 72px 87px;
+  }
+  p.more a:after,
+  p.more a:before {
+    background-image: url(../gfx/sprite@2.png);
+    background-size: 72px 87px;
+  }
+}
+@media all and (max-width: 850px) {
+  img {
+    height: auto;
+  }
+  #container,
+  .inner {
+    width: auto;
+  }
+  #content {
+	width: 666px;
+	margin: 0 auto;
+	float: none;
+  }
+  #sidebar {
+    float: none;
+    width: auto;
+  }
+  ul.submenu {
+    display: none;
+  }
+  select.submenu {
+    display: block;
+    width: 50%;
+    margin: -1em auto 0;
+    padding: 1ex 1em;
+    font-size: 17px;
+  }
+  #header {
+    margin: 0 0 1em;
+  }
+  #navigation {
+    padding: 1em 0;
+    text-align: center;
+  }
+  #navigation li {
+    display: inline-block;
+  }
+  #navigation li a {
+    padding: 1ex;
+  }
+  .article {
+    margin: 0 0 1em;
+    padding: 0 37px;
+  }
+  p.more {
+    padding: 0 1em 0;
+  }
+  p.more a {
+	margin-bottom: 16px;
+  }
+}
+@media all and (max-width: 700px) {
+  #content {
+	width: auto;
+  }
+  .article h2,
+  .article h3 {
+    padding: 0;
+  }
+  .article h2 + time,
+  .article h3 + time {
+    position: static;
+    display: block;
+    padding: 0 0 .5ex;
+  }
+  blockquote {
+    top: 15px;
+  }
+}
+@media all and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    padding: 0 0 1em;
+  }
+  div.code {
+	padding-bottom: 1em;
+  }
+  ol,
+  ul {
+    padding: 0 0 1em;
+  }
+  #navigation ul {
+    font-size: 18px;
+  }
+  .article {
+    padding: 0 10px;
+  }
+  .article p:first-of-type:first-letter {
+    font-size: 46px;
+  }
+  .article.no-initial p:first-of-type:first-letter, p.no-initial:first-of-type:first-letter {
+    font-size: 14px;
+  }
+  select.submenu {
+    width: 70%;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 320px) {
+  .site-name a img {
+    max-width: 260px;
+  }
+  #navigation ul li a {
+    padding: 1ex .5ex;
+  }
+}
+@media all and (max-width: 240px) {
+  .site-name a img {
+    max-width: 180px;
+  }
+  #navigation ul {
+    line-height: 1.8em;
+  }
+  #navigation ul li {
+    display: block;
+  }
+  #navigation ul li a {
+    padding: .5ex 0;
+  }
+  select.submenu {
+    width: 100%;
+    font-size: 14px;
+  }
+  li {
+    display: block;
+  }
+}
+/* 4. PRINT STYLES
+--------------------------------------------------------------------------------
+==============================================================================*/
+@media print {
+  body {
+    font: normal normal 12pt/1.5em "Times New Roman", Times, serif;
+  }
+  select {
+    display: none !important;
+  }
+  a[href]:after {
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+  }
+  a[href^="/"]:after {
+    content: " (http://domain.com" attr(href) ") ";
+  }
+  ol#accessibility-nav,
+  .hide {
+    display: none !important;
+  }
+}

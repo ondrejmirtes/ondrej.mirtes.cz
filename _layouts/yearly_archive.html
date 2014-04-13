@@ -1,0 +1,36 @@
+---
+layout: main
+active: archive
+---
+
+{% for post in page.posts %}
+	{% include article.html article=post link=true content=post.content %}
+{% endfor %}
+
+{% assign previousIterationPage = null %}
+{% assign prevpage = null %}
+{% assign nextpage = null %}
+{% for archivePage in site.data['archives'] reversed %}
+	{% if archivePage.url == page.url %}
+		{% assign prevpage = previousIterationPage %}
+	{% endif %}
+	{% if previousIterationPage.url == page.url %}
+		{% assign nextpage = archivePage %}
+	{% endif %}
+	{% if prevpage and nextpage %}
+		{% break %}
+	{% endif %}
+	{% assign previousIterationPage = archivePage %}
+{% endfor %}
+
+<p class="more">
+	{% if prevpage %}
+		<a href="{{ prevpage.url | remove: '.html' }}" class="prev">{{ prevpage.title_short }}</a>
+
+	{% else %}
+		<a href="/" class="prev">Homepage</a>
+	{% endif %}
+	{% if nextpage %}
+		<a href="{{ nextpage.url | remove: '.html' }}" class="next">{{ nextpage.title_short }}</a>
+	{% endif %}
+</p>

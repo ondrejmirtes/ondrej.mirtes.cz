@@ -1,0 +1,21 @@
+<article class="article{% if include.article.external_url or include.article.no_initial %} no-initial{% endif %}">
+
+	{% if include.article.external_url %}
+		<h3 class="arr"><a href="{{ include.article.external_url }}">{{ include.article.title }}</a></h3>
+	{% else %}
+		<h2>
+			{% if include.link %}
+				<a href="{{ include.article.url | remove: '.html' }}">
+			{% endif %}
+
+			{{ include.article.title }}
+
+			{% if include.link %}</a>{% endif %}
+			</h2>
+	{% endif %}
+
+	<time datetime="{{ include.article.date | date: '%Y-%m-%d' }}"><a href="{{ include.article.url | remove: '.html' }}">{{ include.article.date | date: '%-d. %-m. %Y' }}</a></time>
+
+	{{ include.content }}
+
+</article>

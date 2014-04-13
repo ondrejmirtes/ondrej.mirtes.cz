@@ -1,0 +1,25 @@
+---
+layout: rss
+---
+
+{% for post in site.posts %}
+	{% if forloop.index > site.homepage_limit %}
+		{% break %}
+	{% endif %}
+
+	<item>
+		<title>{% if post.external_url == nil %}■ {% endif %}{{ post.title | xml_escape }}</title>
+		<description>
+			{{ post.content | xml_escape }}
+			&lt;p&gt;&lt;a href=&quot;{{ site.baseurl}}{{ post.url | remove: '.html' }}&quot;&gt;■&lt;/a&gt;&lt;/p&gt;
+		</description>
+		<guid isPermaLink="false">{% if post.guid %}{{ post.guid }}{% else %}{{ post.url | remove: '.html' }}{% endif %}</guid>
+		<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+
+		{% if post.external_url == nil %}
+			<link>{{ site.baseurl}}{{ post.url | remove: '.html' }}</link>
+		{% else %}
+			<link>{{ post.external_url }}</link>
+		{% endif %}
+	</item>
+{% endfor %}

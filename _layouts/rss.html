@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+	<title>{{ site.name }}</title>
+	<description>{{ site.description }}</description>
+	<link>{{ site.baseurl }}/</link>
+	<language>cs</language>
+	<copyright>{{ site.name }}</copyright>
+	<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+	<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+	<generator>{{ site.name }}</generator>
+	<ttl>30</ttl>
+	<atom:link href="{{ site.baseurl }}{{ page.url }}" rel="self" type="application/rss+xml" />
+	<image>
+		<title>{{ site.name }}</title>
+		<url>{{ site.baseurl }}/apple-touch-icon-precomposed.png</url>
+		<link>{{ site.baseurl }}/</link>
+		<description>{{ site.description }}</description>
+	</image>
+
+	{{ content }}
+	</channel>
+</rss>
