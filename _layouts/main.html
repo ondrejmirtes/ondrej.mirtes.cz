@@ -9,7 +9,7 @@
     <meta name="description" content="{{ description }}">
     <meta property="og:image" content="/apple-touch-icon-precomposed.png" />
     <meta property="og:title" content="{{ title }}" />
-    <meta property="og:url" content="{{ site.baseurl }}{{ page.url | remove: '.html' }}" />
+    <meta property="og:url" content="{{ site.baseurl }}{% if page.active != 'homepage' %}{{ page.url | remove: '.html' }}{% else %}/{% endif %}" />
     <meta property="og:site_name" content="Ondřej Mirtes" />
     <meta property="og:type" content="blog" />
     <meta property="og:description" content="{{ description }}" />
