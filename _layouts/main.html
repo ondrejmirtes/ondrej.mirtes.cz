@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    {% capture title | strip %}{% if page.title == 'Ondřej Mirtes' %}{{ page.title }}{% else %}{{ page.title }} | Ondřej Mirtes{% endif %}{% endcapture %}
+    {% capture description | strip %}{% if page.path contains '_posts' %}{{ page.content | markdownify | strip_html | strip_newlines | truncatewords:50 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+    <meta name="description" content="{{ description }}">
     <meta property="og:image" content="/apple-touch-icon-precomposed.png" />
-    <meta property="og:title" content="{% if page.title == 'Ondřej Mirtes' %}{{ page.title }}{% else %}{{ page.title }} | Ondřej Mirtes{% endif %}" />
-    <meta property="og:url" content="{{ page.url | remove: '.html' }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url | remove: '.html' }}" />
     <meta property="og:site_name" content="Ondřej Mirtes" />
     <meta property="og:type" content="blog" />
-    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:description" content="{{ description }}" />
     <meta name="twitter:site" content="@OndrejMirtes">
-    <title>{% if page.title == 'Ondřej Mirtes' %}{{ page.title }}{% else %}{{ page.title }} | Ondřej Mirtes{% endif %}</title>
+    <title>{{ title }}</title>
 
 {% css_asset_tag global %}
 - /css/main.css
