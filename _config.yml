@@ -1,8 +1,9 @@
 name: Ondřej Mirtes
 description: Vývojář s nadšením pro user experience, Apple, počítačové hry, cestování a kofein.
-markdown: rdiscount
-rdiscount:
-  extensions: [ smart ]
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  smart_quotes: sbquo,lsquo,bdquo,ldquo
 pygments: true
 baseurl: "http://ondrej.mirtes.cz"
 permalink: /:title.html
