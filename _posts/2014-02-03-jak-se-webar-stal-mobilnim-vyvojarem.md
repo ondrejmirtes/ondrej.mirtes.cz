@@ -20,7 +20,7 @@ Uživatel na telefonu nemá k dispozici klávesnici a myš, takže si neporadí 
 Po šesti měsících vývoje dnes vydávám [svou první aplikaci](http://www.settleapp.co/), kterou jsem vyvinul společně s [Michalem Langmajerem](http://www.mythio.cz/) – jsme na ni pořádně pyšní. Pokud máte guláš v tom, kterým přátelům dlužíte a kdo dluží vám, určitě ji omrkněte.
 
 <div style="text-align:center" class="no-borders">
-	<a href="http://www.settleapp.co/"><img src="/images/settleapp.png" alt="SettleApp"></a>
+[![SettleApp](/images/settleapp.png)](http://www.settleapp.co/)
 </div>
 
 Mobilní vývoj je pro mě zatím jen hobby na dlouhé zimní i letní večery, ale možná se z toho jednoho dne stane seriózní obživa. Držte mi palce!
