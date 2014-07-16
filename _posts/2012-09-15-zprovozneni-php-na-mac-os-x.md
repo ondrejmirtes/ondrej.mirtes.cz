@@ -126,7 +126,13 @@ sudo mkdir -p /var/log/selenium/
 sudo chmod a+w /var/log/selenium/
 {% endhighlight %}
 
-Uložte tento soubor do `~/Library/LaunchAgents/org.nhabit.Selenium.plist` (samozřejmě nahraďte správnou cestu k vaší verzi Selenium serveru):
+Uložte následující soubor do:
+
+{% highlight bash %}
+~/Library/LaunchAgents/org.nhabit.Selenium.plist
+{% endhighlight %}
+
+A samozřejmě nahraďte správnou cestu k vaší verzi Selenium serveru:
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>

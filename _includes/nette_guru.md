@@ -1,4 +1,4 @@
-### Nette guru
+## Nette guru
 
 Vývoji webových aplikací se věnuji od roku 2005. Od roku 2009 v [Nette](http://nette.org/).
 Patřím mezi největší znalce tohoto frameworku v ČR a podílím se na jeho vývoji.

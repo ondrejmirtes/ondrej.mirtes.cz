@@ -24,7 +24,7 @@ Dále byste si na produkci měli vypnout automatické generování proxy tříd:
 $config->setAutoGenera­teProxyClasses(FAL­SE);
 {% endhighlight %}
 
-Doctrine jinak totiž bude při každém požadavku pro každou entitu generovat proxy (sloužící k lazy loadingu), což je, ano, pomalé.
+Doctrine jinak totiž bude při každém požadavku pro každou entitu generovat proxy, což je, ano, pomalé.[^proxy]
 
 Také je třeba nastavit cache pro metadata (konfigurace entit) a zkompilované DQL dotazy. Viz [výpis všech dostupných driverů](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html).
 
@@ -37,3 +37,5 @@ $config->setQueryCache­Impl($cache);
 Správnost těchto nastavení vám ověří [CLI command](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/tools.html) orm:ensure-production-settings.
 
 Nejhorší nápad, jaký můžete dostat, je psát si vlastní ORM. Jedná se o neuvěřitelně komplexní a náročnou oblast. Problémy, které budete řešit, za vás již dávno vyřešili autoři Doctrine. Pokud ale máte dva roky čas na full-time vyvíjet vlastní ORM a myslíte si, že to zvládnete líp než oni, nebudu vám bránit.
+
+[^proxy]: Proxy třídy slouží k lazy loadingu navázaných dat -- Doctrine vygeneruje kód, který při přístupu k nenačtené proměnné položí dotaz do databáze.

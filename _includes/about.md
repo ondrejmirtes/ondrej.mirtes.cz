@@ -2,7 +2,9 @@ Vývojář a [Nette guru](/nette-guru) s nadšením pro otestovaný kód, Apple,
 
 Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://twitter.com/OndrejMirtes). Mám taky [LinkedIn](http://cz.linkedin.com/in/ondrejmirtes) a <a rel="me" href="https://plus.google.com/115203539890375495464">Google+</a>.
 
-<img src="/images/about-foto.jpg" width="592" height="397" style="border: 1px dashed #333; padding: 5px; margin-bottom: 20px;">
+<p class="about-photo">
+	<img src="/images/about-foto.jpg" width="592" height="397" />
+</p>
 
 <div style="float: left; width: 300px;">
 

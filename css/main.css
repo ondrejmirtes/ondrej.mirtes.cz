@@ -153,9 +153,9 @@ html {
   font-size: 100%;
 }
 body {
-  font: 17px/32px Georgia, "New York CE", utopia, sans-serif;
+  font: 17px/32px 'Open Sans', Helvetica, Arial, sans-serif;
   background: #fff;
-  color: #222;
+  color: #2a2f33;
 }
 hr {
   display: none;
@@ -192,16 +192,19 @@ select {
 }
 a,
 a:visited {
-  border-bottom: 1px dotted #444;
-  color: #c41700;
+  border-bottom: 1px solid #a5abae;
+  color: #2a2f33;
   text-decoration: none;
 }
 a:hover,
-a:active,
+a:active {
+	border-bottom-color: #db311a;
+	color: #db311a;
+}
 a.no-borders,
 .no-borders a {
   border: 0;
-  color: #c41700;
+  color: #db311a;
   text-decoration: none;
 }
 a:focus {
@@ -212,7 +215,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Segoe UI', 'Geneva CE', lucida, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #c41700;
 }
@@ -222,13 +225,19 @@ h1 {
 }
 h2,
 h3 {
-  margin: 0 0 5px;
+  margin: 0 0 20px;
+  color: $;
 }
 h2 {
-  font-size: 24px;
+  font-size: 26px;
+  color: #2a2f33;
+  font-weight: 400;
 }
 h3 {
   font-size: 20px;
+}
+h3.arr a {
+	color: #c41700;
 }
 p {
   padding: 0 0 32px;
@@ -261,13 +270,7 @@ ol li {
 blockquote {
   position: relative;
   padding: 0 0 0 35px;
-  top: 5px;
   font-style: italic;
-}
-blockquote p:first-of-type:first-letter {
-  float: none;
-  padding: 0;
-  font-size: 17px;
 }
 blockquote:before {
   content: '\201C';
@@ -275,9 +278,6 @@ blockquote:before {
   left: 8px;
   top: 5px;
   font-size: 50px;
-}
-blockquote p {
-	padding: 0 0 24px;
 }
 img {
   max-width: 100%;
@@ -299,7 +299,7 @@ body > .wrapper {
   width: 850px;
   position: relative;
   margin: 0 auto;
-  padding: 0 0 51px;
+  padding: 0 0 61px;
 }
 .inner {
   position: relative;
@@ -310,10 +310,7 @@ body > .wrapper {
 ------------------------------------------------------------------------------*/
 #header {
   margin: 0 0 55px;
-  background-image: url(../gfx/retina_line.png), url(../gfx/retina_pattern.png);
-  background-repeat: repeat-x, repeat;
-  background-position: 0 bottom, 0 0;
-  background-size: 4px 1px, 64px 64px;
+  background-color: #353a3d;
 }
 #header .site-name {
   position: relative;
@@ -332,43 +329,33 @@ body > .wrapper {
   text-align: center;
 }
 .links {
-  width: 89px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   position: absolute;
   left: 50%;
-  bottom: -18px;
-  margin: 0 0 0 -44px;
+  bottom: -22px;
+  margin: 0 0 0 -22px;
   overflow: hidden;
-  line-height: 100px;
 }
 .links a {
   z-index: 1;
   border: 0;
   float: left;
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   overflow: hidden;
-  background-image: url(../gfx/sprite.png);
+  line-height: 99em;
+  background-image: url(../gfx/sprite-new.png);
   background-repeat: no-repeat;
+  background-position: -45px 0;
 }
-.links a.icon-rss {
-  margin-right: 17px;
+.links a:hover {
   background-position: 0 0;
-}
-.links a.icon-rss:hover {
-  background-position: 0 -36px;
-}
-.links a.icon-twitter {
-  background-position: -36px 0;
-}
-.links a.icon-twitter:hover {
-  background-position: -36px -36px;
 }
 /* 2.3 Navigation
 ------------------------------------------------------------------------------*/
 #navigation {
   text-align: right;
-  font-family: 'Segoe UI', 'Geneva CE', lucida, sans-serif;
 }
 #navigation ul {
   font-size: 24px;
@@ -423,12 +410,11 @@ select.submenu {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 51px;
+  height: 61px;
+  border-top: 1px solid #dde1e3;
   text-align: center;
-  font: 400 14px/51px 'Segoe UI', 'Geneva CE', lucida, sans-serif;
-  background-image: url(../gfx/retina_line.png), url(../gfx/retina_pattern.png);
-  background-repeat: repeat-x, repeat;
-  background-size: 4px 1px, 64px 64px;
+  font: 400 15px/61px 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #2a2f33;
 }
 /* 3. PAGES
 --------------------------------------------------------------------------------
@@ -438,12 +424,11 @@ select.submenu {
 .article {
   position: relative;
   margin: 0 0 32px;
-  padding: 0 37px 1px;
-  background: url(../gfx/retina_line.png) 0 bottom repeat-x;
-  background-size: 4px 1px;
+  padding: 0 37px 5px;
+  border-bottom: 1px solid #dde1e3;
 }
 .article.no-line {
-  background: none;
+  border-bottom: 0;
 }
 .article h2,
 .article h3 {
@@ -455,14 +440,17 @@ select.submenu {
 }
 .article h2 a:hover,
 .article h3 a:hover {
-  border-bottom: 1px dotted #444;
+  color: #db311a;
+}
+.article h3.arr a:hover {
+  color: #2a2f33;
 }
 .article h2 + time,
 .article h3 + time {
   position: absolute;
   right: 37px;
   top: 8px;
-  font: 300 14px/18px 'Open Sans', Arial, sans-serif;
+  font: 300 16px/18px 'Open Sans', Arial, sans-serif;
 }
 .article h2 + time a,
 .article h3 + time a {
@@ -471,22 +459,7 @@ select.submenu {
 }
 .article h2 + time a:hover,
 .article h3 + time a:hover {
-  border-bottom: 1px dotted #444;
-}
-.article p:first-of-type:first-letter {
-  float: left;
-  padding: 15px 10px 3px 0;
-  font-size: 58px;
-}
-.article blockquote p:first-of-type:first-letter {
-  float: none;
-  padding: 0;
-  font-size: 17px;
-}
-.article.no-initial p:first-of-type:first-letter, p.no-initial:first-of-type:first-letter {
-  float: none;
-  padding: 0;
-  font-size: 17px;
+  border-bottom: 1px solid #b7bfc4;
 }
 .arr a:after {
   position: relative;
@@ -497,9 +470,12 @@ select.submenu {
   height: 7px;
   margin: 0 0 0 11px;
   overflow: hidden;
-  background-image: url(../gfx/sprite.png);
+  background-image: url(../gfx/sprite-new.png);
   background-repeat: no-repeat;
   background-position: -25px -72px;
+}
+.arr a:hover:after {
+  background-position: 0 -72px;
 }
 p.more {
   padding: 0 37px 0;
@@ -523,7 +499,7 @@ p.more a.next:after {
   height: 7px;
   margin: 0 0 0 11px;
   overflow: hidden;
-  background-image: url(../gfx/sprite.png);
+  background-image: url(../gfx/sprite-new.png);
   background-repeat: no-repeat;
   background-position: 0 -72px;
 }
@@ -548,7 +524,7 @@ p.more a.prev:before {
   height: 7px;
   margin: 0 11px 0 0;
   overflow: hidden;
-  background-image: url(../gfx/sprite.png);
+  background-image: url(../gfx/sprite-new.png);
   background-repeat: no-repeat;
   background-position: 0 -80px;
 }
@@ -557,6 +533,16 @@ p.more a.prev:hover {
 }
 p.more a.prev:hover:before {
   background-position: -25px -80px;
+}
+p.about-photo {
+	margin: 20px 0 55px;
+	padding: 13px;
+	border-top: 1px solid #dde1e3;
+	border-bottom: 1px solid #dde1e3;
+}
+p.about-photo img {
+	display: block;
+	margin: auto;
 }
 div.code {
 	padding-bottom: 32px;
@@ -567,25 +553,27 @@ pre {
   padding: 8px 16px;
   line-height: 16px;
   margin-bottom: 32px;
+  -webkit-overflow-scrolling: touch;
 }
 code {
   font-family: Consolas, Courier, Courier New, monospace;
   font-size: 14px;
   margin-bottom: 32px;
+
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   .links a {
-    background-image: url(../gfx/sprite@2.png);
-    background-size: 72px 87px;
+    background-image: url(../gfx/sprite@2-new.png);
+    background-size: 90px 87px;
   }
   .arr a:after {
-    background-image: url(../gfx/sprite@2.png);
-    background-size: 72px 87px;
+    background-image: url(../gfx/sprite@2-new.png);
+    background-size: 90px 87px;
   }
   p.more a:after,
   p.more a:before {
-    background-image: url(../gfx/sprite@2.png);
-    background-size: 72px 87px;
+    background-image: url(../gfx/sprite@2-new.png);
+    background-size: 90px 87px;
   }
 }
 @media all and (max-width: 850px) {
@@ -629,14 +617,7 @@ code {
     padding: 1ex;
   }
   .article {
-    margin: 0 0 1em;
     padding: 0 37px;
-  }
-  p.more {
-    padding: 0 1em 0;
-  }
-  p.more a {
-	margin-bottom: 16px;
   }
 }
 @media all and (max-width: 700px) {
@@ -653,9 +634,6 @@ code {
     display: block;
     padding: 0 0 .5ex;
   }
-  blockquote {
-    top: 15px;
-  }
 }
 @media all and (max-width: 480px) {
   body {
@@ -666,16 +644,16 @@ code {
     font-size: 36px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   h3 {
     font-size: 16px;
   }
   p {
-    padding: 0 0 1em;
+    padding: 0 0 24px;
   }
   div.code {
-	padding-bottom: 1em;
+	padding-bottom: 24px;
   }
   ol,
   ul {
@@ -686,12 +664,6 @@ code {
   }
   .article {
     padding: 0 10px;
-  }
-  .article p:first-of-type:first-letter {
-    font-size: 46px;
-  }
-  .article.no-initial p:first-of-type:first-letter, p.no-initial:first-of-type:first-letter {
-    font-size: 14px;
   }
   select.submenu {
     width: 70%;
@@ -748,4 +720,11 @@ code {
   .hide {
     display: none !important;
   }
+}
+
+/* Bigfoot
+------------------------------------------------------------------------------*/
+.footnote-content p {
+  padding: 0;
+  font-size: 15px;
 }

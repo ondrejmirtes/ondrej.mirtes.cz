@@ -16,9 +16,11 @@
     <meta name="twitter:site" content="@OndrejMirtes">
     <title>{{ title }}</title>
 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 {% css_asset_tag global %}
 - /css/main.css
 - /css/pygments.css
+- /css/bigfoot-default.css
 {% endcss_asset_tag %}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
@@ -62,10 +64,9 @@
 
         <div class="inner">
 
-            <h1 class="site-name"><a href="/" rel="home" title="Přejít na homepage" accesskey="2"><img src="/gfx/logo.png" alt="Ondřej Mirtes" width="276" height="44"></a></h1>
+            <h1 class="site-name"><a href="/" rel="home" title="Přejít na homepage" accesskey="2"><img src="/gfx/logo-new.png" alt="Ondřej Mirtes" width="276" height="44"></a></h1>
 
             <nav class="links">
-                <a href="/rss" class="icon icon-rss" title="RSS">RSS</a>
                 <a href="https://twitter.com/OndrejMirtes" class="icon icon-twitter" title="Twitter">Twitter</a>
             </nav>
             <!-- / links -->
@@ -133,7 +134,7 @@
 
         <div class="inner">
 
-            &copy; 2012&ndash;{{ site.time | date: '%Y' }} Ondřej Mirtes
+            &copy; 2012&ndash;{{ site.time | date: '%Y' }} Ondřej Mirtes | <a href="/rss">RSS</a>
 
         </div>
         <!-- / inner -->
@@ -143,6 +144,7 @@
 
 {% javascript_asset_tag global %}
 - /js/jquery.js
+- /js/bigfoot.min.js
 - /js/main.js
 {% endjavascript_asset_tag %}
 
