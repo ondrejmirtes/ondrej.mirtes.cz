@@ -728,3 +728,15 @@ code {
   padding: 0;
   font-size: 15px;
 }
+
+.footnote-content a,
+.footnote-content a:visited {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+
+.footnote-content a:hover,
+.footnote-content a:active {
+	border-bottom-color: #db311a;
+	color: #db311a;
+}
