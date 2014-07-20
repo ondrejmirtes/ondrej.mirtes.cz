@@ -555,11 +555,13 @@ pre {
   margin-bottom: 32px;
   -webkit-overflow-scrolling: touch;
 }
+pre code {
+	font-size: 16px;
+	margin-bottom: 32px;
+}
 code {
-  font-family: Consolas, Courier, Courier New, monospace;
-  font-size: 14px;
-  margin-bottom: 32px;
-
+	font-size: 18px;
+	font-family: 'Inconsolata', Courier, Courier New, monospace;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   .links a {
