@@ -3,11 +3,9 @@ layout: main
 title: Stránka nenalezena
 ---
 
-<script type="text/javascript">
-	if (typeof(_paq) !== 'undefined') {
-		_paq.push(['trackEvent', 'Error', '404', location.href]);
-	}
-</script>
+{% javascript_asset_tag error404 %}
+- /js/piwik-404.js
+{% endjavascript_asset_tag %}
 
 <article class="article">
 
