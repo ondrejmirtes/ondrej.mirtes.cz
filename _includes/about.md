@@ -50,6 +50,6 @@ Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://t
 - [Tweetbot](http://tapbots.com/software/tweetbot/)
 - [Airmail](http://airmailapp.com/)
 - [Things](http://culturedcode.com/things/)
-- [PocketCasts](http://www.shiftyjelly.com/pocketcasts)
+- [Overcast](https://overcast.fm/)
 
 </div>
