@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Čím se živíte?
 date: 2013-02-04 23:25:00
 external_url: http://ticci.org/what-i-do-for-a-living

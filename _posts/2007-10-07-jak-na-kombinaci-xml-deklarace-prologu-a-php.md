@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jak na kombinaci XML deklarace (prologu) a PHP?
 date: 2007-10-07 00:00:00
 guid: c20ad4d76fe97759aa27a0c99bff6710

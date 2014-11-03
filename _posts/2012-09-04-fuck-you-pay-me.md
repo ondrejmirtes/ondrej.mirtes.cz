@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fuck You. Pay Me.
 date: 2012-09-04 22:35:00
 external_url: http://vimeo.com/22053820

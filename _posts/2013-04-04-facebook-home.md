@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Facebook Home
 date: 2013-04-04 20:13:00
 external_url: https://www.facebook.com/home

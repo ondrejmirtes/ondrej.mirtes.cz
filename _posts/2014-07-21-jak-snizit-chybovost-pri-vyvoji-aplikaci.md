@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jak snížit chybovost při vývoji aplikací
 ---
 

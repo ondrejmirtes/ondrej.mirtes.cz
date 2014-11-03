@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ochrana e-mailů proti spambotům pomocí JavaScriptu
 date: 2007-02-21 00:00:00
 no_initial: TRUE

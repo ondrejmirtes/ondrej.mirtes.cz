@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Společné vlastnictví kódu
 date: 2012-10-01 19:32:00
 external_url: http://www.robertdresler.cz/2012/10/spolecne-vlastnictvi-kodu.html

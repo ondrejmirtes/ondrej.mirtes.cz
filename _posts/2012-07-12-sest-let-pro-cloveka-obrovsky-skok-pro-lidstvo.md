@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Šest let pro člověka, obrovský skok pro lidstvo
 date: 2012-07-12 16:16:00
 external_url: http://www.buzzfeed.com/mjs538/tweets-that-are-so-2006

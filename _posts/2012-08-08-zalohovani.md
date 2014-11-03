@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zálohování
 date: 2012-08-08 19:48:00
 external_url: http://shawnblanc.net/2012/08/backup-2/

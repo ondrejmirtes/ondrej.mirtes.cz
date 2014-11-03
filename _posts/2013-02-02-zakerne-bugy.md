@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zákeřné bugy
 date: 2013-02-02 15:31:00
 external_url: http://omniti.com/seeds/broken-windows

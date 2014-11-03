@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Restart Honzy Javorka
 date: 2012-11-07 21:31:00
 external_url: http://honzajavorek.cz/blog/restart

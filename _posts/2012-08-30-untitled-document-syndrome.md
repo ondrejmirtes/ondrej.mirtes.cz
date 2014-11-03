@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Untitled Document Syndrome
 date: 2012-08-30 18:48:00
 external_url: http://daringfireball.net/2009/02/untitled_document_syndrome

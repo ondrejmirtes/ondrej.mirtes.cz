@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Auto-cancel - poctivý kontrast k auto-renew
 date: 2013-10-10 13:28:00
 external_url: http://blog.beeminder.com/autocancel/

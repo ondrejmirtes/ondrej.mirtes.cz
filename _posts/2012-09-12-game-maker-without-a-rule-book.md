@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Game Maker Without a Rule Book
 date: 2012-09-12 11:12:00
 external_url: http://www.nytimes.com/2012/09/09/technology/valve-a-video-game-maker-with-few-rules.html

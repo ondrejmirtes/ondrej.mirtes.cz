@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Vltavská a Palmovka mají strašlivou pověst
 date: 2012-07-19 21:36:00
 external_url: http://www.lidovky.cz/mapa-hruzy-vltavska-a-palmovka-maji-straslivou-povest-p17-/ln_domov.asp?c=A120717_121445_ln_domov_ogo#content

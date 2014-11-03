@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Strašák jménem TDD
 date: 2013-05-24 19:04:00
 external_url: http://codemanship.co.uk/parlezuml/blog/?postid=1170

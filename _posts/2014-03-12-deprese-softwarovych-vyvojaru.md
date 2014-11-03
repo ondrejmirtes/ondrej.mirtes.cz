@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Deprese softwarových vývojářů
 date: 2014-03-12 17:11:00
 external_url: http://blog.jtimothyking.com/2009/04/17/depression-and-the-software-developer

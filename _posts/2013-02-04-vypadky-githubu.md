@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Výpadky GitHubu
 date: 2013-02-04 23:20:00
 external_url: https://github.com/blog/1397-recent-code-search-outages

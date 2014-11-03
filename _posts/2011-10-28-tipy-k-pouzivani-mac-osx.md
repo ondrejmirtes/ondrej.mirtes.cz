@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tipy k používání Mac OS X
 date: 2011-10-28 00:00:00
 guid: c81e728d9d4c2f636f067f89cc14862c

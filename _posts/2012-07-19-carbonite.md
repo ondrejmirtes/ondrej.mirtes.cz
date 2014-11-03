@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Carbonite
 date: 2012-07-19 15:37:00
 external_url: http://www.carbonite.com/en/

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Kočičí přání
 date: 2012-12-20 20:17:00
 external_url: http://www.kociciprani.cz/

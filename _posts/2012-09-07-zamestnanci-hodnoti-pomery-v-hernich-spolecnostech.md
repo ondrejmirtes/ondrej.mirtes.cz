@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zaměstnanci hodnotí poměry v herních společnostech
 date: 2012-09-07 09:41:00
 external_url: http://www.kotaku.com.au/2012/09/angry-employees-bash-pretty-much-every-major-video-game-company/

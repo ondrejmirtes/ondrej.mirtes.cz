@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Killing the Crunch Mode Antipattern
 external_url: http://chadfowler.com/blog/2014/01/22/the-crunch-mode-antipattern/
 ---

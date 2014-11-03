@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Proč Valve? Aneb na co potřebujeme korporace?
 date: 2012-08-04 18:22:00
 external_url: http://blogs.valvesoftware.com/economics/why-valve-or-what-do-we-need-corporations-for-and-how-does-valves-management-structure-fit-into-todays-corporate-world/

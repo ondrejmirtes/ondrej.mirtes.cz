@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Your Code May Be Elegant...
 date: 2012-11-21 22:33:00
 external_url: http://omniti.com/seeds/your-code-may-be-elegant

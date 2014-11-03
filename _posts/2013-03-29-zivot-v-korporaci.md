@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Život v korporaci
 date: 2013-03-29 22:39:00
 external_url: http://zivotvkorporaci.cz

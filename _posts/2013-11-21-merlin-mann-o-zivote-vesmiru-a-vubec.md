@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Merlin Mann o životě, vesmíru a vůbec
 date: 2013-11-21 22:37:00
 external_url: http://thegreatdiscontent.com/merlin-mann

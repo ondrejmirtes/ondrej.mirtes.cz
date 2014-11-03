@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PHP 5 OOP cheatsheet (tahák)
 date: 2010-03-04 00:00:00
 guid: d3d9446802a44259755d38e6d163e820

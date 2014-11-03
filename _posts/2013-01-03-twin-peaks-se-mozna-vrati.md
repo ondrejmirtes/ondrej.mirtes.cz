@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Twin Peaks se možná vrátí
 date: 2013-01-03 20:39:00
 external_url: http://moviehole.net/201260661mark-frost-hints-at-possible-twin-peaks-return

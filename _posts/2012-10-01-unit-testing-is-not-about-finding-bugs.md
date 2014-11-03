@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Unit testing is not about finding bugs
 date: 2012-10-01 11:31:00
 external_url: http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/

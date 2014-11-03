@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Conversation With Loren Brichter
 date: 2012-10-29 13:45:00
 external_url: http://www.macstories.net/msinterviews/a-conversation-with-loren-brichter/

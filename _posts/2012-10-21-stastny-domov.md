@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Štastný domov
 date: 2012-10-21 19:15:00
 external_url: http://ruzovapanda.blogspot.cz/2012/10/domoveda-jak-jsem-si-vytvorila-stastny.html

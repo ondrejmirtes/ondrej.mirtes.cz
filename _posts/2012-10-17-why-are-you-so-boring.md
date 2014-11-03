@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Why are you so boring?
 date: 2012-10-17 22:34:00
 external_url: http://juokaz.com/blog/why-are-you-so-boring.html

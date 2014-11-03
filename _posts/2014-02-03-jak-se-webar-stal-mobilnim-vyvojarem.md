@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jak se webař stal mobilním vývojářem
 date: 2014-02-03 09:05:00
 guid: a0a080f42e6f13b3a2df133f073095dd

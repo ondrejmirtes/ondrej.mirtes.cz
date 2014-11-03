@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dependency injection v controllerech
 date: 2012-12-04 20:11:00
 external_url: https://gist.github.com/4207252

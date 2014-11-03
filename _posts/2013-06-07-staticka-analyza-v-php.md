@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Statická analýza v PHP
 date: 2013-06-07 19:25:00
 external_url: http://ctvrtkon.cz/2013/06/staticka-analyza-v-php/

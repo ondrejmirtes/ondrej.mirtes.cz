@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Soustřeďme se na jednu věc
 date: 2012-10-06 12:23:00
 external_url: http://blog.krecan.net/2012/09/25/soustredme-se-na-jednu-vec/

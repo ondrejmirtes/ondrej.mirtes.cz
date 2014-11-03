@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Doctrine 2 není pomalá!*
 date: 2014-04-07 07:59:00
 no_initial: TRUE

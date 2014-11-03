@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Bugfixy jako terapie
 date: 2013-06-18 22:16:00
 external_url: http://zachholman.com/posts/bugfixes-as-therapy/

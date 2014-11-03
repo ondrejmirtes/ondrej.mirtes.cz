@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jak na spam ve webových formulářích?
 date: 2007-06-27 00:00:00
 guid: c51ce410c124a10e0db5e4b97fc2af39

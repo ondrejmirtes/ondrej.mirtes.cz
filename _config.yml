@@ -4,7 +4,7 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
   smart_quotes: sbquo,lsquo,bdquo,ldquo
-pygments: true
+highlighter: pygments
 baseurl: "http://ondrej.mirtes.cz"
 permalink: /:title.html
 yearly_archive:
@@ -12,3 +12,10 @@ yearly_archive:
 homepage_limit: 10
 timezone: Europe/Prague
 exclude: [ README.md, Makefile ]
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

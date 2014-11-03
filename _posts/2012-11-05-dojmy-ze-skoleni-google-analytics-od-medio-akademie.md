@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dojmy ze školení Google Analytics od Medio Akademie
 date: 2012-11-05 14:29:00
 no_initial: TRUE

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jak najímá GitHub
 date: 2012-09-25 19:54:00
 external_url: https://github.com/blog/1269-the-github-hiring-experience

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Dust Over India
 date: 2012-07-09 14:02:00
 external_url: http://postmasculine.com/a-dust-over-india

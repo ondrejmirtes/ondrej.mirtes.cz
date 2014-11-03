@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "WebExpo 2012: Na co se těší Michal Katuščák"
 date: 2012-09-17 17:10:00
 external_url: http://blog.programator-koder.cz/clanek/webexpo-2012-na-co-se-nejvice-tesim/

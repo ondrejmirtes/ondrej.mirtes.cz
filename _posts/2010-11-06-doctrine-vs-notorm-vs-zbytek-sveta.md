@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Doctrine vs. NotORM vs. zbytek světa
 date: 2010-11-06 00:00:00
 guid: c9f0f895fb98ab9159f51fd0297e236d

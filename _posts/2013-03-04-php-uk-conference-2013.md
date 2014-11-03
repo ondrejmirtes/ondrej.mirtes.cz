@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PHP UK Conference 2013
 date: 2013-03-04 20:56:00
 external_url: http://bobbyjason.co.uk/blog/176/php-uk-conference-2013/

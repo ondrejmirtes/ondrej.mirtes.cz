@@ -1,5 +1,4 @@
 ---
-layout: post
 title: iMessage Gets Smarter
 date: 2012-09-25 19:48:00
 external_url: http://duncandavidson.com/blog/2012/09/messages

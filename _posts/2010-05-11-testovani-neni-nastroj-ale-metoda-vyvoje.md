@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Testování není nástroj, ale metoda vývoje
 date: 2010-05-11 00:00:00
 external_url: http://www.zdrojak.cz/clanky/testovani-neni-nastroj-ale-metoda-vyvoje/

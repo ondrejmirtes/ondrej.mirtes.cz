@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Skeuomorphism
 date: 2012-09-19 16:30:00
 external_url: http://www.fastcodesign.com/1670760/will-apples-tacky-software-design-philosophy-cause-a-revolt

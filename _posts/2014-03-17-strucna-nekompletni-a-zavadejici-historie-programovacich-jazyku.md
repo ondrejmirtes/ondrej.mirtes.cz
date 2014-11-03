@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Stručná, nekompletní a zavádějící historie programovacích jazyků
 date: 2014-03-17 20:40:00
 external_url: http://james-iry.blogspot.cz/2009/05/brief-incomplete-and-mostly-wrong.html

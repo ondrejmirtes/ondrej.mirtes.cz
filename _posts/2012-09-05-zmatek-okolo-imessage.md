@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zmatek okolo iMessage
 date: 2012-09-05 10:51:00
 external_url: http://jark.me/1209/clear-up-the-messages-and-imessage-confusion/

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Kód není to jediné, co by se mělo pravidelně refaktorovat
 date: 2013-07-09 11:21:00
 external_url: http://codemanship.co.uk/parlezuml/blog/?postid=1172

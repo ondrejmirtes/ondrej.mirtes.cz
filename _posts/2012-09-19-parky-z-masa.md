@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Párky z masa
 date: 2012-09-19 18:38:00
 external_url: http://blog.peoplecomm.cz/clanek/parky-z-masa

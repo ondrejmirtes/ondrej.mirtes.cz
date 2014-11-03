@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Google Chrome pro iOS
 date: 2012-08-23 08:07:00
 guid: 19ca14e7ea6328a42e0eb13d585e4c22

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Nenuťte uživatele rozklikávat články!
 date: 2012-09-06 20:07:00
 guid: d9d4f495e875a2e075a1a4a6e1b9770f

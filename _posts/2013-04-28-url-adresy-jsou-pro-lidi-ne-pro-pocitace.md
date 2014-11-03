@@ -1,5 +1,4 @@
 ---
-layout: post
 title: URL adresy jsou pro lidi, ne pro počítače
 date: 2013-04-28 20:38:00
 external_url: http://www.not-implemented.com/urls-are-for-people-not-computers/

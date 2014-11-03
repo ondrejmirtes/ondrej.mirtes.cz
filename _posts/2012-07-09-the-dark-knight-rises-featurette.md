@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Dark Knight Rises Featurette
 date: 2012-07-09 18:48:00
 external_url: http://devour.com/video/the-dark-knight-rises-featurette/

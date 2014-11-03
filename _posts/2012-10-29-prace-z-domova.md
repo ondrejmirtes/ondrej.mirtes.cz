@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Práce z domova
 date: 2012-10-29 13:50:00
 external_url: http://honzajavorek.cz/blog/prace-z-domova

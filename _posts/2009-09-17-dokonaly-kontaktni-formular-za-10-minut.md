@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dokonalý kontaktní formulář za 10 minut
 date: 2009-09-17 00:00:00
 guid: 6512bd43d9caa6e02c990b0a82652dca

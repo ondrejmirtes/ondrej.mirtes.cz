@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Nette guru"
 date: 2012-09-28 19:50:00
 external_url: http://ondrej.mirtes.cz/nette-guru

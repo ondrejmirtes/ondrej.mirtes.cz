@@ -1,5 +1,4 @@
 ---
-layout: post
 title: HTML tabulky - jiný úhel pohledu
 date: 2012-10-16 22:47:00
 external_url: http://chalupa.blog.root.cz/2012/10/16/html-tabulky-na-web-jiny-uhel-pohledu/

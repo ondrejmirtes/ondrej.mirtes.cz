@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Surface Pro s 23 GB
 date: 2013-01-29 21:01:00
 external_url: http://www.theverge.com/2013/1/29/3929110/surface-pro-disk-space-windows-8

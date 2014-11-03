@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Školení Profesionální grafika nejen pro web
 date: 2012-06-22 17:42:00
 guid: 9bf31c7ff062936a96d3c8bd1f8f2ff3

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Today is your lucky day
 date: 2012-09-10 12:49:00
 external_url: http://devblog.cz/2012/09/today-is-your-lucky-day/

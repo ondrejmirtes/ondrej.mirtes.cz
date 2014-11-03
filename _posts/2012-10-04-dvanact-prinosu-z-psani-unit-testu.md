@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dvanáct přínosů z psaní unit testů
 date: 2012-10-04 18:54:00
 external_url: http://blog.jtimothyking.com/2006/07/11/twelve-benefits-of-writing-unit-tests-first

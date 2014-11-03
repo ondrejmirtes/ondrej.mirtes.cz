@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Discourse - diskuse nové generace
 date: 2013-02-09 11:39:00
 external_url: http://www.discourse.org

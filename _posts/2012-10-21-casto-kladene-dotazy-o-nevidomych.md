@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Často kladené dotazy o nevidomých
 date: 2012-10-21 19:38:00
 external_url: http://www.geekblind.com/2012/10/faq-aneb-casto-kladene-dotazy-o.html

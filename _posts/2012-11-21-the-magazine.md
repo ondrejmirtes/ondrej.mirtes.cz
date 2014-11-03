@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Magazine
 date: 2012-11-21 10:35:00
 external_url: http://the-magazine.org

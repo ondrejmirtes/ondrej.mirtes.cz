@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Školení Doctrine 2 ORM
 date: 2013-04-18 10:31:00
 external_url: http://akademie.medio.cz/doctrine2

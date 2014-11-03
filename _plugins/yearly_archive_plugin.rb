@@ -65,17 +65,18 @@ module Jekyll
       payload = {
           'page' => self.to_liquid,
           'paginator' => pager.to_liquid
-      }.deep_merge(site_payload)
+      }
+      payload = Utils.deep_merge_hashes(payload, site_payload)
       do_layout(payload, layouts)
     end
 
     def to_liquid(attr = nil)
-      self.data.deep_merge({
+      self.data = Utils.deep_merge_hashes(self.data, {
            'content' => self.content,
            'date' => @date,
            'year' => @year,
            'url' => @url
-       })
+      })
     end
 
     def destination(dest)

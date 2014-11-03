@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zapomeňte na konzole, postavte si Steambox!
 date: 2012-11-30 22:28:00
 external_url: http://www.theverge.com/2012/11/30/3706718/forget-the-ps4-and-the-xbox-720-build-your-own-steambox-on-the-cheap

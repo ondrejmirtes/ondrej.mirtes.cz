@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Proč Tomáš Vrabec switchnul
 date: 2012-08-27 22:53:00
 external_url: http://hnizdo.blog.zive.cz/2012/08/macbook-air-mac-osx-aneb-proc-jsem-presel/

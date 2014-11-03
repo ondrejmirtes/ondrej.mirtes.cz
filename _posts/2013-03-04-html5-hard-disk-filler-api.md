@@ -1,5 +1,4 @@
 ---
-layout: post
 title: HTML5 Hard Disk Filler API
 date: 2013-03-04 21:04:00
 external_url: http://feross.org/fill-disk/

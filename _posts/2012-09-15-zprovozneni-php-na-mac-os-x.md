@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zprovoznění PHP na Mac OS X
 date: 2012-09-15 11:12:00
 guid: 2838023a778dfaecdc212708f721b788

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fantastical for iPhone
 date: 2012-11-29 20:05:00
 external_url: http://flexibits.com/fantastical-iphone

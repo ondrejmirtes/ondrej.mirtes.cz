@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The PC is Over
 date: 2012-10-01 19:36:00
 external_url: http://www.codinghorror.com/blog/2012/10/the-pc-is-over.html

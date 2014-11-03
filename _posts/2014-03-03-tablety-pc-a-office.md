@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tablety, PC a Office
 date: 2014-03-03 22:55:00
 external_url: http://ben-evans.com/benedictevans/2014/2/26/tablets-pcs-and-office

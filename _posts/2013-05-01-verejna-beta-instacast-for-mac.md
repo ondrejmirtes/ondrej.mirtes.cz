@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Veřejná beta Instacast for Mac
 date: 2013-05-01 21:15:00
 external_url: http://vemedio.com/products/instacast-mac

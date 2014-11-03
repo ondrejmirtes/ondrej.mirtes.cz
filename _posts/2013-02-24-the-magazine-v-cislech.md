@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Magazine v číslech
 date: 2013-02-24 15:17:00
 external_url: http://www.npr.org/blogs/money/2013/02/21/172588471/how-to-start-a-magazine-and-make-a-profit

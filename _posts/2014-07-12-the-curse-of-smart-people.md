@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Curse of Smart People
 external_url: http://apenwarr.ca/log/?m=201407#01
 ---

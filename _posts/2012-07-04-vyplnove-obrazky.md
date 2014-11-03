@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Výplňové obrázky
 date: 2012-07-04 21:45:00
 external_url: http://dummy.mirtes.cz/

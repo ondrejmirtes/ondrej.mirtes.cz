@@ -1,5 +1,4 @@
 ---
-layout: post
 title: I have a wrong opinion
 date: 2013-01-29 21:06:00
 external_url: http://juokaz.com/blog/i-have-a-wrong-opinion.html

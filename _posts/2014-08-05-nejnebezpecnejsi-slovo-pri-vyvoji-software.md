@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Nejnebezpečnější slovo při vývoji software
 external_url: http://alistapart.com/blog/post/the-most-dangerous-word-in-software-development
 ---

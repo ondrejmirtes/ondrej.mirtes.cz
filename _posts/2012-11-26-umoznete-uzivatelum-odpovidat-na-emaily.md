@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Umožněte uživatelům odpovídat na e-maily
 date: 2012-11-26 14:57:00
 no_initial: TRUE

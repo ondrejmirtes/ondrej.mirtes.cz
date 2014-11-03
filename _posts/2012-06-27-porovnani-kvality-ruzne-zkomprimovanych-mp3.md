@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Porovnání kvality různě zkomprimovaných MP3
 date: 2012-06-27 21:20:00
 external_url: http://www.codinghorror.com/blog/2012/06/concluding-the-great-mp3-bitrate-experiment.html

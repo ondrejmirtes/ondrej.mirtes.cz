@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Blizzard Timeline
 date: 2012-07-05 14:57:00
 external_url: http://us.blizzard.com/en-us/company/about/b20/timeline.html

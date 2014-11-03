@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PHP is much better than you think
 date: 2012-07-04 23:58:00
 external_url: http://fabien.potencier.org/article/64/php-is-much-better-than-what-you-think

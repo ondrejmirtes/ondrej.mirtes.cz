@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Microsoft has failed
 date: 2012-11-16 09:44:00
 external_url: http://semiaccurate.com/2012/11/14/microsoft-has-failed/

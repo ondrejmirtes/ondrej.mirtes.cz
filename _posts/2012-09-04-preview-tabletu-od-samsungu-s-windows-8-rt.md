@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Preview tabletu od Samsungu s Windows 8 RT
 date: 2012-09-04 20:37:00
 external_url: http://www.theverge.com/2012/8/31/3281960/windows-rt-office-2013-rt-specs-details-hands-on

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Co čekám od iOS 7
 date: 2013-04-02 10:03:00
 guid: c9e1074f5b3f9fc8ea15d152add07294

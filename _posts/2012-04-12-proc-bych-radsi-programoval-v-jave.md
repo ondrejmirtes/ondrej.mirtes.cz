@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Proč bych radši programoval v Javě
 date: 2012-04-12 00:02:00
 guid: eccbc87e4b5ce2fe28308fd9f2a7baf3

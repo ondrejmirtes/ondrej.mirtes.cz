@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dvoufázové přihlašování
 date: 2012-08-20 09:00:00
 guid: e369853df766fa44e1ed0ff613f563bd

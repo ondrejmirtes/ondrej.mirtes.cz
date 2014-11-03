@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Things Holly and I have argued about this week
 date: 2012-10-26 21:50:00
 external_url: http://www.27bslash6.com/arguments.html

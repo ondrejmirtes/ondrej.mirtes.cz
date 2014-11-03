@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Proč Tim Edwards odinstaluje Windows 8
 date: 2012-08-26 13:03:00
 external_url: http://www.pcgamesn.com/article/why-i-m-uninstalling-windows-8

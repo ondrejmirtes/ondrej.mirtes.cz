@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Hledání alternativy k Gmailu
 date: 2013-10-14 09:40:00
 guid: 5ef059938ba799aaa845e1c2e8a762bd

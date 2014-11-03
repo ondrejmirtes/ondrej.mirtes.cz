@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tweetbot for Mac
 date: 2012-07-11 19:20:00
 external_url: http://tapbots.com/tweetbot_mac/

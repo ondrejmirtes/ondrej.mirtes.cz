@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Faster Zombies!
 date: 2012-08-02 10:25:00
 external_url: http://blogs.valvesoftware.com/linux/faster-zombies/

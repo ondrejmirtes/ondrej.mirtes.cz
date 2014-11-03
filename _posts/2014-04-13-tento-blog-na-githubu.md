@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tento blog na GitHubu
 external_url: https://github.com/ondrejmirtes/ondrej.mirtes.cz
 ---

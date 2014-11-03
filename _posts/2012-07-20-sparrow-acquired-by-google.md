@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sparrow acquired by Google
 date: 2012-07-20 19:48:00
 external_url: http://sprw.me/

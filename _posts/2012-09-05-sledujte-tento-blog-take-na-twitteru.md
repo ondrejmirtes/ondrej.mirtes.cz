@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sledujte tento blog také na Twitteru!
 date: 2012-09-05 11:37:00
 external_url: https://twitter.com/OndrejMirtesRSS

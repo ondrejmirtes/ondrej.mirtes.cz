@@ -1,5 +1,4 @@
 ---
-layout: post
 title: It all began with a strange e-mail
 date: 2012-06-17 00:00:00
 external_url: http://blogs.valvesoftware.com/economics/it-all-began-with-a-strange-email/

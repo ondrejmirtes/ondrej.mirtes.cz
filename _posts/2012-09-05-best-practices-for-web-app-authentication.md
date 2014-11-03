@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Best Practices for Web App Authentication
 date: 2012-09-05 10:14:00
 external_url: http://codingkilledthecat.wordpress.com/2012/09/04/some-best-practices-for-web-app-authentication/

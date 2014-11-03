@@ -1,5 +1,4 @@
 ---
-layout: post
 title: O očekáváních kladených na vývojáře
 date: 2013-08-18 18:28:00
 external_url: http://sealedabstract.com/rants/of-wizards-and-magical-machines/

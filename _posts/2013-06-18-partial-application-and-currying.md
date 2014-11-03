@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Partial Application & Currying
 date: 2013-06-18 22:19:00
 external_url: http://benalman.com/news/2012/09/partial-application-in-javascript/

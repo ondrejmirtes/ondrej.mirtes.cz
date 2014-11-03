@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Hours are Bullshit
 date: 2012-09-02 14:56:00
 external_url: http://zachholman.com/posts/how-github-works-hours/

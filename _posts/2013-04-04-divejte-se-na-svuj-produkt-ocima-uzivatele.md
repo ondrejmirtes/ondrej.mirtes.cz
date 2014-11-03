@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dívejte se na svůj produkt očima uživatele
 date: 2013-04-04 08:58:00
 external_url: http://tightwind.net/2013/04/design-products-as-a-user/

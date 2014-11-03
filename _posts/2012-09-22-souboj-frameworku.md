@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Souboj frameworků
 date: 2012-09-22 12:54:00
 external_url: http://www.knesl.com/articles/view/webexpo-2012-souboj-frameworku

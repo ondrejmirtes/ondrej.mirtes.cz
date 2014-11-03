@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Strukturovaná prokrastinace
 date: 2014-01-17 11:14:00
 external_url: http://www.structuredprocrastination.com/

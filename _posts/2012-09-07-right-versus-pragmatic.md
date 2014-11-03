@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Right versus pragmatic
 date: 2012-09-07 11:46:00
 external_url: http://www.marco.org/2012/02/25/right-vs-pragmatic
