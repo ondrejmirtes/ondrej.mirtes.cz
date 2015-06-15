@@ -5,7 +5,7 @@ kramdown:
   parse_block_html: true
   smart_quotes: sbquo,lsquo,bdquo,ldquo
 highlighter: pygments
-baseurl: "http://ondrej.mirtes.cz"
+baseurl: "https://ondrej.mirtes.cz"
 permalink: /:title.html
 yearly_archive:
   path: archiv
