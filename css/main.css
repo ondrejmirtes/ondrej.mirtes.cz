@@ -265,7 +265,7 @@ ul li:before {
   background: #c41700;
 }
 ol li {
-  list-style: upper-roman inside;
+  list-style: decimal inside;
 }
 blockquote {
   position: relative;
