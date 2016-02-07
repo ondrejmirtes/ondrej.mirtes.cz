@@ -9,7 +9,7 @@ Dnes chci ale představit způsob, jak se můžete zbavit ifů, pokud splňujete
 1. Váš kód je asynchronní.
 2. Na něco čekáte.
 
-S asynchronním kódem se můžete běžně setkat ve světe JavaScriptu -- v prohlížeči i na serveru v node.js. PHP může být asynchronní, pokud využijete [ReactPHP](http://reactphp.org/). Všechny tyto implementace mají společné to, že běh aplikace je řízený pomocí event loop. Blokující operace, jako provádění HTTP requestů, dotazování do databáze, čtení z disku apod., se v asynchronním prostředí stávají neblokujícími. To znamená, že během čekání na jejich výsledek (odpověď od vzdáleného serveru, výsledek dotazu, obsah souboru) můžete spouštět jiný kód, proces aplikace se tak nikdy nenudí a využíváte efektivněji systémové prostředky.
+S asynchronním kódem se můžete běžně setkat ve světě JavaScriptu -- v prohlížeči i na serveru v node.js. PHP může být asynchronní, pokud využijete [ReactPHP](http://reactphp.org/). Všechny tyto implementace mají společné to, že běh aplikace je řízený pomocí event loop. Blokující operace, jako provádění HTTP requestů, dotazování do databáze, čtení z disku apod., se v asynchronním prostředí stávají neblokujícími. To znamená, že během čekání na jejich výsledek (odpověď od vzdáleného serveru, výsledek dotazu, obsah souboru) můžete spouštět jiný kód, proces aplikace se tak nikdy nenudí a využíváte efektivněji systémové prostředky.
 
 Druhou podmínku splňujete, pokud váš kód obsahuje podmínky ve stylu:
 
