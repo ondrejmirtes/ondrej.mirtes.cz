@@ -1,4 +1,4 @@
-Vývojář a [Nette guru](/nette-guru) s nadšením pro otestovaný kód, Apple, počítačové hry, cestování a kofein.
+Vývojář s nadšením pro otestovaný kód, Apple, počítačové hry, cestování a kofein.
 
 Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://twitter.com/OndrejMirtes).
 
