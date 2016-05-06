@@ -10,11 +10,11 @@ Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://t
 
 ### Odebírám
 
-- [Shawn Blanc](http://shawnblanc.net/)
 - [Marco Arment](http://www.marco.org/)
-- [512 Pixels](http://512pixels.net/)
-- [Curious Rat](http://curiousrat.com/)
 - [Daring Fireball](http://daringfireball.net/)
+- [Stratechery](https://stratechery.com/)
+- [Code Ahoy](http://codeahoy.com)
+- [Wait But Why](http://waitbutwhy.com/)
 
 </div>
 
@@ -26,7 +26,7 @@ Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://t
 - [Stephen King](http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dstripbooks&field-keywords=Stephen+King)
 - [J.R.R. Tolkien](http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dstripbooks&field-keywords=J.R.R.+Tolkien)
 - [Jeff Lindsay](http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dstripbooks&field-keywords=Jeff+Lindsay)
-- [Dan Brown](http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dstripbooks&field-keywords=Dan+Brown)
+- [Gillian Flynn](http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dstripbooks&field-keywords=Gillian+Flynn)
 
 </div>
 
@@ -35,10 +35,10 @@ Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://t
 ### Poslouchám
 
 - [Accidental Tech Podcast](http://atp.fm/)
-- [Debug](http://www.imore.com/tag/debug)
-- [Amplified](http://5by5.tv/amplified)
-- [The Talk Show](http://muleradio.net/thetalkshow/)
-- [Digit](http://www.digit.cz/)
+- [Analog(ue)](https://www.relay.fm/analogue)
+- [Upgrade](https://www.relay.fm/upgrade)
+- [The Talk Show](https://daringfireball.net/thetalkshow/)
+- [Group Therapy](http://www.aboveandbeyond.nu/abgt)
 
 </div>
 
@@ -48,7 +48,7 @@ Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://t
 
 - [Reeder](http://reederapp.com/)
 - [Tweetbot](http://tapbots.com/software/tweetbot/)
-- [Airmail](http://airmailapp.com/)
+- [Plex](https://plex.tv/)
 - [Things](http://culturedcode.com/things/)
 - [Overcast](https://overcast.fm/)
 
