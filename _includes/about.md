@@ -1,5 +1,7 @@
 Vývojář s nadšením pro otestovaný kód, Apple, počítačové hry, cestování a kofein.
 
+Vyvíjím [PHPStan](https://github.com/phpstan/phpstan), který vám může odhalit spoustu bugů ve vašem kódu, aniž byste na něj měli testy. Bloguju o něm [v angličtině na Medium.com](https://medium.com/@ondrejmirtes) a doufám, že mě jednou bude živit [díky kampani na Patreon.com](https://www.patreon.com/phpstan).
+
 Kontaktovat mě můžete na <ondrej@mirtes.cz> nebo na [@OndrejMirtes](https://twitter.com/OndrejMirtes).
 
 <p class="about-photo">
