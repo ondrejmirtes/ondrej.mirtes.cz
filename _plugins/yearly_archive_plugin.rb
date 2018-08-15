@@ -75,7 +75,8 @@ module Jekyll
            'content' => self.content,
            'date' => @date,
            'year' => @year,
-           'url' => @url
+           'url' => @url,
+           'is_archive' => true,
       })
     end
 

@@ -81,9 +81,9 @@
         <nav id="navigation">
             <ul>
                 <li{% if page.active == 'homepage' %} class="active"{% endif %}><a href="/">Homepage</a></li>
-                <li{% if page.active == 'archive' %} class="active"{% endif %}>
+                <li{% if page.is_archive %} class="active"{% endif %}>
                 	<a href="{{ site.data['archives'].last.url }}">Archiv</a>
-                	{% if page.active == 'archive' %}
+                	{% if page.is_archive %}
 	                	<ul class="submenu">
 							{% for archive_page in site.data['archives'] reversed %}
 								<li{% if archive_page.year == page.year %} class="active"{% endif %}>
@@ -98,7 +98,7 @@
                 <li{% if page.active == 'about' %} class="active"{% endif %}><a href="/o-mne">O mně</a></li>
             </ul>
 
-			{% if page.active == 'archive' %}
+			{% if page.is_archive %}
 				<form action="" method="get">
 					<select class="submenu" id="frm-archiveForm">
 						{% for archive_page in site.data['archives'] reversed %}

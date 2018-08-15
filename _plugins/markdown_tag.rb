@@ -14,7 +14,7 @@ module Jekyll
     def render(context)
       tmpl = File.read File.join Dir.pwd, "_includes", @text
       site = context.registers[:site]
-      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+      converter = site.find_converter_instance(Jekyll::Converters::Markdown)
       tmpl = (Liquid::Template.parse tmpl).render site.site_payload
       html = converter.convert(tmpl)
     end
