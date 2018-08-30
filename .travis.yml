@@ -1,9 +1,22 @@
 language: generic
 
-script:
-  - pip install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
-  - $(aws ecr get-login --no-include-email --region eu-west-1)
-  - docker pull 928192134594.dkr.ecr.eu-west-1.amazonaws.com/ondrej.mirtes.cz:latest
-  - docker run --rm -v $(pwd):/usr/deploy 928192134594.dkr.ecr.eu-west-1.amazonaws.com/ondrej.mirtes.cz jekyll build
-  - docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -v $(pwd):/usr/deploy 928192134594.dkr.ecr.eu-west-1.amazonaws.com/ondrej.mirtes.cz s3_website push
+services:
+  - docker
+
+stages:
+- name: check
+- name: deploy
+  if: branch = master
+
+jobs:
+  include:
+    - stage: check
+      script: echo test
+    - stage: deploy
+      script:
+        - pip install --user awscli
+        - export PATH=$PATH:$HOME/.local/bin
+        - $(aws ecr get-login --no-include-email --region eu-west-1)
+        - docker pull 928192134594.dkr.ecr.eu-west-1.amazonaws.com/ondrej.mirtes.cz:latest
+        - docker run --rm -v $(pwd):/usr/deploy 928192134594.dkr.ecr.eu-west-1.amazonaws.com/ondrej.mirtes.cz jekyll build
+        - docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -v $(pwd):/usr/deploy 928192134594.dkr.ecr.eu-west-1.amazonaws.com/ondrej.mirtes.cz s3_website push
