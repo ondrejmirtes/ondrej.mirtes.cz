@@ -15,7 +15,7 @@ Při vývoji není důležité, za jak dlouho dokáže vývojář na zelené lou
 - Dostupnost a cena vývojářů se znalostí technologie
 - Dokumentace, komunita a budoucnost technologie
 
-Sám jsem se před třemi lety účastnil [Souboje frameworků](http://www.knesl.com/articles/view/webexpo-2012-souboj-frameworku). Úkolem bylo, podobně jako v Davidově výzvě, za jeden den vyvinout e-shop s administrací. Každý ze soutěžících k úkolu přistoupil jinak a výsledné pořadí ne nutně odpovídalo tomu, jak by si daná aplikace vedla dlouhodobě. Např. vítězný Jakub Vrána ke tvorbě administrace použil svůj Adminer Editor, což mu v soutěži ušetřilo spoustu času, ale generovaná administrace na základě definice tabulek v relační databázi neposkytuje žádný prostor pro customizaci chování a tudíž přináší nižší uživatelský komfort.
+Sám jsem se před třemi lety účastnil [Souboje frameworků](http://www.knesl.com/articles/view/webexpo-2012-souboj-frameworku). Úkolem bylo, podobně jako v Davidově výzvě, za jeden den vyvinout e-shop s administrací. Každý ze soutěžících k úkolu přistoupil jinak a výsledné pořadí ne nutně odpovídalo tomu, jak by si daná aplikace vedla dlouhodobě. Např. vítězný Jakub Vrána ke tvorbě administrace použil svůj Adminer Editor, což mu v soutěži ušetřilo spoustu času, ale generovaná administrace na základě definice tabulek v relační databázi přináší nižší uživatelský komfort.
 
 Do srovnání samozřejmě promlouvá i zkušenost jednotlivých účastníků -- a to jak celkově s programováním, tak s konkrétní soutěžní technologií.
 
