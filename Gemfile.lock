@@ -50,7 +50,7 @@ GEM
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jekyll_version_plugin (2.0.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.2.1)
