@@ -71,7 +71,11 @@ export class SiteStack extends Stack {
           override: true,
         },
         referrerPolicy: {
-          referrerPolicy: cloudfront.HeadersReferrerPolicy.SAME_ORIGIN,
+          // strict-origin-when-cross-origin (the modern browser default) sends
+          // only the origin to cross-origin HTTPS, which YouTube/Vimeo embeds
+          // need to validate the embedding domain. `same-origin` sent no
+          // referrer cross-origin and broke the YouTube embed.
+          referrerPolicy: cloudfront.HeadersReferrerPolicy.STRICT_ORIGIN_WHEN_CROSS_ORIGIN,
           override: true,
         },
         xssProtection: { protection: true, modeBlock: true, override: true },
