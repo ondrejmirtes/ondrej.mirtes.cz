@@ -51,7 +51,7 @@
     </div>
   </header>
 
-  <div class="grow w-full max-w-[850px] mx-auto px-4 py-10 flex flex-col min-[850px]:flex-row gap-8">
+  <div class="grow w-full max-w-[850px] mx-auto px-4 min-[850px]:px-0 py-10 flex flex-col min-[850px]:flex-row gap-8 min-[850px]:gap-14">
 
     <aside class="min-[850px]:order-1 min-[850px]:w-40 min-[850px]:shrink-0">
       <nav id="navigation" class="min-[850px]:text-right text-center">
@@ -65,7 +65,7 @@
           <li>
             <a href="{{ (archives | last).url if archives | length else t.archiveBase }}" class="border-0 {{ 'text-[#c41700]' if isArchive else 'text-[#333] hover:text-[#c41700]' }}">{{ t.nav.archive }}</a>
             {% if isArchive %}
-              <ul class="hidden min-[850px]:block text-lg leading-8">
+              <ul class="hidden min-[850px]:block text-lg leading-snug space-y-3 mt-2">
                 {% for a in archives | reverse %}
                   <li><a href="{{ a.url }}" class="border-0 {{ 'text-[#c41700]' if a.slug == archiveSlug else 'text-[#333] hover:text-[#c41700]' }}"><span class="text-sm text-[#c41700]">({{ a.count }})</span> {{ a.year }}</a></li>
                 {% endfor %}
@@ -87,7 +87,7 @@
       </nav>
     </aside>
 
-    <section id="content" class="min-[850px]:order-2 min-[850px]:w-[666px] grow">
+    <section id="content" class="min-[850px]:order-2 grow min-w-0">
       {{ content | safe }}
     </section>
 
