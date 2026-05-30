@@ -5,7 +5,9 @@ title: Dokonalé scrollování přesně tam, kam uživatel potřebuje
 Při vývoji [nového košíku Slevomatu](https://twitter.com/slevomat/status/529988112756539392) jsme čelili řadě výzev. Jedna z nich souvisela s tím, že celý košík byl prezentován na jedné stránce a nové kroky prodlužovaly stránku směrem dolů. Pro uživatele to má ten přínos, že na pozdějších krocích nemusí dohledávat, co v košíku vlastně má, ale stačí se podívat na vrchol stránky.
 
 <div style="text-align:center">
+
 ![Aktuální košík](/images/cely-kosik.png)
+
 </div>
 
 Celý košík je koncipovaný jako SPA[^spa]. I když jsme měli wireframy s návrhem podoby jednotlivých kroků košíku, statický návrh, který sám o sobě vypadá dobře, neposkytuje kompletní obraz o fungování aplikace. Musel jsem přijít na to, jak udělat přechod mezi jednotlivými kroky košíku tak, aby se uživatel hned zorientoval a měl představu, kde se nachází.
@@ -21,7 +23,9 @@ $('html, body').animate({
 ```
 
 <div style="text-align:center">
+
 ![Košík -- prvek je zarovnaný s horním okrajem](/images/kosik-top.png)
+
 </div>
 
 Stránka se hýbala pokaždé a někdy urazila i zbytečně dlouhou vzdálenost, což bylo nepříjemné pro oči. Řekl jsem si, že cílem vlastně není, aby se aktuální krok objevil vždy na vrcholu viewportu, ale pouze aby byl celý viditelný a to kdekoli na obrazovce.
@@ -40,7 +44,9 @@ if (isWholeElementVisible) {
 Pokud tato podmínka neprošla, přistoupil jsem opět k naivnímu scrollu k hornímu okraji. To ale vedlo ke stejně zbytečným a příliš velkým pohybům jako před touto optimalizací. Napadlo mě, že bych mohl nějak pracovat s dolním okrajem prvku a zarovnávat ho ke spodnímu okraji viewportu:
 
 <div style="text-align:center">
+
 ![Košík -- prvek je zarovnaný s dolním okrajem](/images/kosik-bottom.png)
+
 </div>
 
 Ale v jakém případě? Nemůžu tak scrollovat pokaždé, protože by to since jakž-takž fungovalo pro přechod do následujících kroků, ale při návratu do předchozích by opět docházelo k většímu pohybu stránky, než je ve skutečnosti potřeba. A to je ten pravý klíč - porovnám vzdálenost, jakou musí stránka cestovat pro zarovnání horního okraje prvku s horním okrajem viewportu a dolního okraje prvku s dolním okrajem viewportu a zascrolluju tam, kam je to blíž!
