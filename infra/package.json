@@ -1,0 +1,25 @@
+{
+  "name": "ondrej-mirtes-cz-infra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AWS CDK infrastructure for ondrej.mirtes.cz (S3 + CloudFront)",
+  "bin": {
+    "infra": "bin/infra.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "aws-cdk": "^2",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2",
+    "constructs": "^10"
+  }
+}
