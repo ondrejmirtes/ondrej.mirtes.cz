@@ -2,7 +2,7 @@
 title: PHP UK Conference 2013
 slug: php-uk-conference-2013
 date: 2013-03-04T20:56:00
-external_url: http://bobbyjason.co.uk/blog/176/php-uk-conference-2013/
+external_url: https://web.archive.org/web/20130314033720/http://bobbyjason.co.uk:80/blog/176/php-uk-conference-2013/
 guid: ac627ab1ccbdb62ec96e702f07f6425b
 ---
 
@@ -10,4 +10,4 @@ In February I attended this conference in London. Despite its name, plenty of th
 
 Most of the talks were advanced in nature and dealt with interesting technologies. So I didn't have to listen for the hundred-and-fiftieth time about naming my variables clearly or how to write my first unit test.
 
-Since I found a [summary](http://bobbyjason.co.uk/blog/176/php-uk-conference-2013/) of most of the talks I attended, I won't repeat myself here. And I'm almost certain that a year from now I'll be heading to London again.
+Since I found a [summary](https://web.archive.org/web/20130314033720/http://bobbyjason.co.uk:80/blog/176/php-uk-conference-2013/) of most of the talks I attended, I won't repeat myself here. And I'm almost certain that a year from now I'll be heading to London again.

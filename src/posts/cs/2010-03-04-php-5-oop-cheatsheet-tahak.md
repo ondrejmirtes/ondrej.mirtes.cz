@@ -8,7 +8,7 @@ Zápis některých aspektů objektově orientovaného programování v PHP má p
 
 U jednotlivých popisů budu velice stručný, článek si neklade za cíl vysvětlit [OOP](http://cs.wikipedia.org/wiki/Objektov%C4%9B_orientovan%C3%A9_programov%C3%A1n%C3%AD), zaměřuje se pouze na způsob zápisu.
 
-K hezkému objektovému kódu patří i jeho jednotná podoba, doporučuji k nastudování [Nette Coding Standard](http://doc.nette.org/en/2.1/coding-standard).
+K hezkému objektovému kódu patří i jeho jednotná podoba, doporučuji k nastudování [Nette Coding Standard](https://web.archive.org/web/20140116001534/http://doc.nette.org:80/en/2.1/coding-standard).
 
 ### Třídy
 
@@ -361,7 +361,7 @@ $a->{$bool ? 'allow' : 'deny'}();
 
 ### Jmenné prostory (namespaces) (PHP 5.3)
 
-Pokud se vám hodí mít dvě třídy stejného názvu, tak je stačí dát do dvou různých jmenných prostorů a nemáte problém. Ale pozor! Namespaces spíše přidělávají práci, než aby ji ulehčovali. Přesto se dá přijít na způsob, jak práci s namespaces [minimalizovat na nejmenší možnou mez](http://forum.nettephp.com/cs/2418-jak-nejlepe-na-php-5-3-a-namespaces).
+Pokud se vám hodí mít dvě třídy stejného názvu, tak je stačí dát do dvou různých jmenných prostorů a nemáte problém. Ale pozor! Namespaces spíše přidělávají práci, než aby ji ulehčovali. Přesto se dá přijít na způsob, jak práci s namespaces [minimalizovat na nejmenší možnou mez](https://web.archive.org/web/20100225142608/http://forum.nettephp.com:80/cs/2418-jak-nejlepe-na-php-5-3-a-namespaces).
 
 ```php
 //lze mít více úrovní jmenných prostorů, \ je oddělovač

@@ -11,7 +11,7 @@ Long gone are the days when I'd spend half an afternoon in PHP cobbling together
 
 In Nette, building a **perfect** and **bulletproof** contact form is a 10-minute job. The framework contains both a class for working with forms and a class for sending e-mail (including support for building the message in a template-based way).
 
-What does the source code of such a form look like? We create it in a [factory](http://doc.nette.org/cs/presenters#toc-tovarnicky-na-komponenty) inside a [Presenter](http://doc.nette.org/cs/presenters):
+What does the source code of such a form look like? We create it in a [factory](https://web.archive.org/web/20110611115409/http://doc.nette.org:80/cs/presenters) inside a [Presenter](https://web.archive.org/web/20110611115409/http://doc.nette.org:80/cs/presenters):
 
 ```php
 use Nette\Application\UI\Form;
@@ -105,4 +105,4 @@ P.P.S. At the beginning of October I rewrote the whole blog into Nette, dibi and
 ### Further reading
 
 - [Nette Framework: Bulletproof forms (Zdroják.cz)](http://zdrojak.root.cz/clanky/nette-framework-neprustrelne-formulare/)
-- [The Mail class (nette.org)](http://doc.nette.org/cs/mailing)
+- [The Mail class (nette.org)](https://web.archive.org/web/20110611115348/http://doc.nette.org:80/cs/mailing)

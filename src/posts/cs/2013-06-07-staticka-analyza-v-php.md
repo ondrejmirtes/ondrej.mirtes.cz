@@ -1,7 +1,7 @@
 ---
 title: Statická analýza v PHP
 date: 2013-06-07T19:25:00
-external_url: http://ctvrtkon.cz/2013/06/staticka-analyza-v-php/
+external_url: https://web.archive.org/web/20130610070333/http://ctvrtkon.cz:80/2013/06/staticka-analyza-v-php/
 guid: 7f6ffaa6bb0b408017b62254211691b5
 ---
 

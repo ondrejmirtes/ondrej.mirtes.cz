@@ -2,7 +2,7 @@
 title: Confusion around iMessage
 slug: confusion-around-imessage
 date: 2012-09-05T10:51:00
-external_url: http://jark.me/1209/clear-up-the-messages-and-imessage-confusion/
+external_url: https://web.archive.org/web/20120930011418/http://jark.me:80/1209/clear-up-the-messages-and-imessage-confusion/
 guid: f7177163c833dff4b38fc8d2872f1ec6
 ---
 

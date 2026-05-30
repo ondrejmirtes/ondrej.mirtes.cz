@@ -10,7 +10,7 @@ Už dávno jsou ty doby, kdy jsem v PHP půl odpoledne patlal obstojný formulá
 
 V Nette je tvorba **dokonalého** a **neprůstřelného** kontaktního formuláře práce na 10 minut. Framework totiž obsahuje třídu jak pro práci s formuláři, tak třídu pro odeslání e-mailu (včetně podpory tvorby zprávy šablonovým způsobem).
 
-Jak vypadá zdrojový kód takového formuláře? Vytvoříme si ho v [továrničce](http://doc.nette.org/cs/presenters#toc-tovarnicky-na-komponenty) v [Presenteru](http://doc.nette.org/cs/presenters):
+Jak vypadá zdrojový kód takového formuláře? Vytvoříme si ho v [továrničce](https://web.archive.org/web/20110611115409/http://doc.nette.org:80/cs/presenters) v [Presenteru](https://web.archive.org/web/20110611115409/http://doc.nette.org:80/cs/presenters):
 
 ```php
 use Nette\Application\UI\Form;
@@ -104,4 +104,4 @@ P.P.S. Začátkem října jsem celý blog přepsal do Nette, dibi a Texy, takže
 ### K nastudování
 
 - [Nette Framework: Neprůstřelné formuláře (Zdroják.cz)](http://zdrojak.root.cz/clanky/nette-framework-neprustrelne-formulare/)
-- [Třída Mail (nette.org)](http://doc.nette.org/cs/mailing)
+- [Třída Mail (nette.org)](https://web.archive.org/web/20110611115348/http://doc.nette.org:80/cs/mailing)

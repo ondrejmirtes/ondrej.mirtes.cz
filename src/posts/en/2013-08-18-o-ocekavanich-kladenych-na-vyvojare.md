@@ -2,7 +2,7 @@
 title: On the expectations placed on developers
 slug: on-the-expectations-placed-on-developers
 date: 2013-08-18T18:28:00
-external_url: http://sealedabstract.com/rants/of-wizards-and-magical-machines/
+external_url: https://web.archive.org/web/20130822065131/http://sealedabstract.com:80/rants/of-wizards-and-magical-machines/
 guid: c45147dee729311ef5b5c3003946c48f
 ---
 

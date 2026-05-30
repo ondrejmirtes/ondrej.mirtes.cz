@@ -1,7 +1,7 @@
 ---
 title: Zkušenosti s Copycentrum.cz
 date: 2012-12-26T13:17:00
-external_url: http://blog.fiddis.cz/?p=132
+external_url: https://web.archive.org/web/20121231060510/http://blog.fiddis.cz:80/?p=132
 guid: 2a38a4a9316c49e5a833517c45d31070
 ---
 

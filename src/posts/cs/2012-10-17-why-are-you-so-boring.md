@@ -1,11 +1,11 @@
 ---
 title: Why are you so boring?
 date: 2012-10-17T22:34:00
-external_url: http://juokaz.com/blog/why-are-you-so-boring.html
+external_url: https://web.archive.org/web/20121030104225/http://juokaz.com:80/blog/why-are-you-so-boring.html
 guid: a3f390d88e4c41f2747bfa2f1b5f87db
 ---
 
-Juozas Kaziukėnas je velice zajímavý člověk. Webový vývojář a podnikatel, který neustále zkouší nové věci (např. [žít bez domova](http://juokaz.com/blog/living-homeless.html)) a bloguje o tom.
+Juozas Kaziukėnas je velice zajímavý člověk. Webový vývojář a podnikatel, který neustále zkouší nové věci (např. [žít bez domova](https://web.archive.org/web/20121209094651/http://juokaz.com:80/blog/living-homeless.html)) a bloguje o tom.
 
 Jeho nejnovější článek přináší jednoduché poselství - pokud po něčem toužíte, udělejte to.
 

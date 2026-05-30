@@ -39,7 +39,7 @@ For Gmail users I recommend [Sparrow](http://sparrowmailapp.com/), a client with
 
 For Google Reader users there's [Reeder](http://reederapp.com/mac/) (it also exists for iPhone and iPad). It likewise syncs with the web interface, can throw articles into Read It Later, and supports Readability (stripping a web page of the clutter around it for comfortable reading).
 
-A given is the official [Twitter for Mac](http://itunes.apple.com/cz/app/twitter/id409789998?mt=12), which also follows in the footsteps of its iPhone and iPad counterparts.
+A given is the official [Twitter for Mac](https://web.archive.org/web/20170220061655/https://itunes.apple.com/cz/app/twitter/id409789998?mt=12), which also follows in the footsteps of its iPhone and iPad counterparts.
 
 I dumped my calendars from Google Calendar into the preinstalled iCal.
 

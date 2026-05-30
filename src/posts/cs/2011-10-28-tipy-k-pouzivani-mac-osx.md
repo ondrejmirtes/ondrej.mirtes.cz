@@ -38,7 +38,7 @@ Pro uživatele Gmailu doporučuji [Sparrow](http://sparrowmailapp.com/), klient 
 
 Pro uživatele Google Readeru je [Reeder](http://reederapp.com/mac/) (existuje i pro iPhone a iPad). Taktéž se synchronizuje s webovým rozhraním, umí házet články do Read It Later a podporuje Readability (očesání webové stránky o zbytečnosti okolo pro pohodlné čtení).
 
-Samozřejmostí je oficiální [Twitter for Mac](http://itunes.apple.com/cz/app/twitter/id409789998?mt=12), který taktéž jde ve šlépějích svých protějšků pro iPhone a iPad.
+Samozřejmostí je oficiální [Twitter for Mac](https://web.archive.org/web/20170220061655/https://itunes.apple.com/cz/app/twitter/id409789998?mt=12), který taktéž jde ve šlépějích svých protějšků pro iPhone a iPad.
 
 Kalendáře z Google Calendaru jsem si naházel do předinstalovaného iCalu.
 

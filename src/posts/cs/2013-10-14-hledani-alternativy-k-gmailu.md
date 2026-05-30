@@ -38,7 +38,7 @@ Nastavení dvoufázové autentizace proběhlo bez problémů a je na úrovni Gma
 
 Příjemně mě překvapil iOS přímou podporou Outlook.com při přidávání účtu do systému, takže jsem nemusel opisovat žádné názvy serverů ani porty. Zabudovaná aplikace Mail pro Outlook.com podporuje push notifikace, takže se o e-mailu dozvím okamžitě a ne v patnáctiminutových obnovovacích intervalech, což se o Gmailu říct nedá.
 
-Horší to je s importem e-mailů. Sám Microsoft na svém webu [odkazuje](http://blogs.office.com/b/microsoft-outlook/archive/2012/08/09/upgrade-from-gmail-to-outlook-com-in-5-easy-steps.aspx) na vlastní službu [TrueSwitch](https://secure5.trueswitch.com/hotmail/), která ovšem byla zrušena. E-maily lze vždy přesunout ručně v běžném mailovém klientovi díky IMAPu, ale stejně bych tu práci radši přenechal automatizovanému nástroji.
+Horší to je s importem e-mailů. Sám Microsoft na svém webu [odkazuje](http://blogs.office.com/b/microsoft-outlook/archive/2012/08/09/upgrade-from-gmail-to-outlook-com-in-5-easy-steps.aspx) na vlastní službu [TrueSwitch](https://web.archive.org/web/20140123032618/https://secure5.trueswitch.com/hotmail/), která ovšem byla zrušena. E-maily lze vždy přesunout ručně v běžném mailovém klientovi díky IMAPu, ale stejně bych tu práci radši přenechal automatizovanému nástroji.
 
 Absence doménového koše není problém. Když jsem se včera vůbec poprvé podíval do koše v Google Apps, 99% e-mailů nebylo určených mně, šlo jen o spam. Bez něj se obejdu.
 

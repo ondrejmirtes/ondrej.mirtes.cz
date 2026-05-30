@@ -4,7 +4,7 @@ slug: asynchronous-processing-with-rabbitmq
 date: 2017-01-12T23:00:00
 ---
 
-Last September I got in my car and set off on the 600-kilometer drive from Prague northeast toward Warsaw. In the remote complex of the gigantic Ossa hotel, the no less gigantic conference [PHPCon Poland 2016](http://www.phpcon.pl/2016/en/) was being held, with a packed program full of talks by local and foreign speakers. And I was one of them.
+Last September I got in my car and set off on the 600-kilometer drive from Prague northeast toward Warsaw. In the remote complex of the gigantic Ossa hotel, the no less gigantic conference [PHPCon Poland 2016](https://web.archive.org/web/20170420225845/http://www.phpcon.pl:80/2016/en/) was being held, with a packed program full of talks by local and foreign speakers. And I was one of them.
 
 I had prepared a talk about RabbitMQ. This topic is very close to my heart, because in PHP I like doing unconventional things detached from the classic "start up, handle the request and die" model. By using RabbitMQ or another message queue you can make your application more efficient and, for instance, arrange for your users to receive a requested e-mail immediately, rather than only at the next run of a script via Cron.
 

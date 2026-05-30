@@ -1,7 +1,7 @@
 ---
 title: Blizzard Timeline
 date: 2012-07-05T14:57:00
-external_url: http://us.blizzard.com/en-us/company/about/b20/timeline.html
+external_url: https://web.archive.org/web/20120710000502/http://us.blizzard.com:80/en-us/company/about/b20/timeline.html
 guid: 98f13708210194c475687be6106a3b84
 ---
 

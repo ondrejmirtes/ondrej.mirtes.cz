@@ -2,7 +2,7 @@
 title: A Dust Over India
 slug: a-dust-over-india
 date: 2012-07-09T14:02:00
-external_url: http://postmasculine.com/a-dust-over-india
+external_url: https://web.archive.org/web/20120709222926/http://postmasculine.com/a-dust-over-india
 guid: 37693cfc748049e45d87b8c7d8b9aacd
 ---
 

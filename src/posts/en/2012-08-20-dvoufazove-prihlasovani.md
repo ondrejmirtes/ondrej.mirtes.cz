@@ -29,7 +29,7 @@ You can turn it on [in the security settings](https://www.facebook.com/settings?
 
 My bank, ČSOB, doesn't require SMS verification when logging in to online banking, but it does when carrying out any operation with the accounts. These days that's probably already standard at every bank.
 
-Recently, however, it additionally introduced [two-factor authorization when using a payment card on the internet](http://www.csob.cz/cz/lide/Platebni-karty/Stranky/Zabezpeceni-internetovych-plateb-kartou-3D-Secure.aspx). In the Czech Republic all payment gateways already support it, but it's starting to spread abroad too. It's awkward that this service is opt-in for merchants, so an attacker can still use the card where this verification isn't required, but even so it's a step in the right direction.
+Recently, however, it additionally introduced [two-factor authorization when using a payment card on the internet](https://web.archive.org/web/20120917030117/http://www.csob.cz/cz/Lide/Platebni-karty/Stranky/Zabezpeceni-internetovych-plateb-kartou-3D-Secure.aspx). In the Czech Republic all payment gateways already support it, but it's starting to spread abroad too. It's awkward that this service is opt-in for merchants, so an attacker can still use the card where this verification isn't required, but even so it's a step in the right direction.
 
 ### Steam
 
@@ -51,4 +51,4 @@ Account management on the Battle.net website asks me to enter it every time; in 
 
 I hope this practice will spread among service providers. The obvious candidates that haven't implemented it yet are Apple, Twitter, Dropbox, Amazon, and others.
 
-PayPal is supposed to support two-factor authentication via [VeriSign Identity Protection](https://idprotect.verisign.com/mainmenu.v), but when I tried to pair the authenticator it reported an error. It probably doesn't support it for Czech accounts yet.
+PayPal is supposed to support two-factor authentication via [VeriSign Identity Protection](https://web.archive.org/web/20120823163805/https://idprotect.verisign.com/mainmenu.v), but when I tried to pair the authenticator it reported an error. It probably doesn't support it for Czech accounts yet.

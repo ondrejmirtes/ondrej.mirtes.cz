@@ -1,6 +1,6 @@
 ---
 title: Killing the Crunch Mode Antipattern
-external_url: http://chadfowler.com/blog/2014/01/22/the-crunch-mode-antipattern/
+external_url: https://web.archive.org/web/20140701081430/http://chadfowler.com/blog/2014/01/22/the-crunch-mode-antipattern/
 ---
 
 Přesčasy sice přináší krátkodobý užitek, ale dlouhodobě nefungují a dokonce škodí.

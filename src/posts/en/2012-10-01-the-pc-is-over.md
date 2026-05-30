@@ -2,7 +2,7 @@
 title: The PC is Over
 slug: the-pc-is-over
 date: 2012-10-01T19:36:00
-external_url: http://www.codinghorror.com/blog/2012/10/the-pc-is-over.html
+external_url: https://web.archive.org/web/20121002062621/http://www.codinghorror.com:80/blog/2012/10/the-pc-is-over.html
 guid: 03afdbd66e7929b125f8597834fa83a4
 ---
 

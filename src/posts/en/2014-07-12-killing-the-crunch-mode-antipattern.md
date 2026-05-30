@@ -1,7 +1,7 @@
 ---
 title: Killing the Crunch Mode Antipattern
 slug: killing-the-crunch-mode-antipattern
-external_url: http://chadfowler.com/blog/2014/01/22/the-crunch-mode-antipattern/
+external_url: https://web.archive.org/web/20140701081430/http://chadfowler.com/blog/2014/01/22/the-crunch-mode-antipattern/
 ---
 
 Overtime may bring short-term benefits, but it doesn't work in the long run and can even be harmful.

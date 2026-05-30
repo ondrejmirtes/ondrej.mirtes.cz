@@ -1,7 +1,7 @@
 ---
 title: Don't Just Eat Your Own Dog Food. Be The Dog!
 date: 2013-12-11T15:02:00
-external_url: http://codemanship.co.uk/parlezuml/blog/?postid=1192
+external_url: https://web.archive.org/web/20140108110719/http://codemanship.co.uk:80/parlezuml/blog/?postid=1192
 guid: da4fb5c6e93e74d3df8527599fa62642
 ---
 

@@ -9,7 +9,7 @@ The syntax for some aspects of object-oriented programming in PHP has a fairly h
 
 I'll be very brief in the individual descriptions; the article doesn't aim to explain [OOP](http://cs.wikipedia.org/wiki/Objektov%C4%9B_orientovan%C3%A9_programov%C3%A1n%C3%AD), it focuses purely on the way things are written.
 
-Nice object-oriented code also includes a consistent form, so I recommend studying the [Nette Coding Standard](http://doc.nette.org/en/2.1/coding-standard).
+Nice object-oriented code also includes a consistent form, so I recommend studying the [Nette Coding Standard](https://web.archive.org/web/20140116001534/http://doc.nette.org:80/en/2.1/coding-standard).
 
 ### Classes
 
@@ -362,7 +362,7 @@ $a->{$bool ? 'allow' : 'deny'}();
 
 ### Namespaces (PHP 5.3)
 
-If it's handy for you to have two classes with the same name, just put them into two different namespaces and you're fine. But watch out! Namespaces tend to create more work than they save. Even so, there's a way to [keep working with namespaces to an absolute minimum](http://forum.nettephp.com/cs/2418-jak-nejlepe-na-php-5-3-a-namespaces).
+If it's handy for you to have two classes with the same name, just put them into two different namespaces and you're fine. But watch out! Namespaces tend to create more work than they save. Even so, there's a way to [keep working with namespaces to an absolute minimum](https://web.archive.org/web/20100225142608/http://forum.nettephp.com:80/cs/2418-jak-nejlepe-na-php-5-3-a-namespaces).
 
 ```php
 //you can have multiple levels of namespaces, \ is the separator

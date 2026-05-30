@@ -117,7 +117,7 @@ sudo apachectl restart
 brew install wget
 ```
 
-Copy the URL to the downloaded selenium-server-standalone-*.jar file from [this list](http://code.google.com/p/selenium/downloads/list) and use it in the wget command:
+Copy the URL to the downloaded selenium-server-standalone-*.jar file from [this list](https://web.archive.org/web/20120909082029/http://code.google.com:80/p/selenium/downloads/list) and use it in the wget command:
 
 ```bash
 sudo mkdir /usr/lib/selenium/

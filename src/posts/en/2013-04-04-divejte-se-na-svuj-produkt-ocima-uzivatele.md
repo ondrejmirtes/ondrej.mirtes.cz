@@ -2,7 +2,7 @@
 title: Look at Your Product Through the User's Eyes
 slug: look-at-your-product-through-the-users-eyes
 date: 2013-04-04T08:58:00
-external_url: http://tightwind.net/2013/04/design-products-as-a-user/
+external_url: https://web.archive.org/web/20130410012249/http://tightwind.net:80/2013/04/design-products-as-a-user
 guid: 65b9eea6e1cc6bb9f0cd2a47751a186f
 ---
 

@@ -2,7 +2,7 @@
 title: The last episode of Build & Analyze
 slug: the-last-episode-of-build-and-analyze
 date: 2012-12-19T19:50:00
-external_url: http://5by5.tv/buildanalyze/108
+external_url: https://web.archive.org/web/20121230182458/http://5by5.tv:80/buildanalyze/108
 guid: 3ef815416f775098fe977004015c6193
 ---
 

@@ -28,7 +28,7 @@ Zapnout si ho můžete [v nastavení zabezpečení](https://www.facebook.com/set
 
 Moje ČSOB sice nevyžaduje ověření SMSkou při přihlášení do bankovnictví, ale při provádění jakékoli operace s účty již ano. Dnes je to u všech bank snad už standard.
 
-Nedávno ale navíc zavedla [dvoufázovou autorizaci při použití platební karty na Internetu](http://www.csob.cz/cz/lide/Platebni-karty/Stranky/Zabezpeceni-internetovych-plateb-kartou-3D-Secure.aspx). V ČR ji již podporují všechny platební brány, ale začíná se rozmáhat i v zahraničí. Je nešikovné, že tato služba je pro prodejce opt-in, takže útočník může kartu tam, kde toto ověření vyžadování není, ale i tak je to krok správným směrem.
+Nedávno ale navíc zavedla [dvoufázovou autorizaci při použití platební karty na Internetu](https://web.archive.org/web/20120917030117/http://www.csob.cz/cz/Lide/Platebni-karty/Stranky/Zabezpeceni-internetovych-plateb-kartou-3D-Secure.aspx). V ČR ji již podporují všechny platební brány, ale začíná se rozmáhat i v zahraničí. Je nešikovné, že tato služba je pro prodejce opt-in, takže útočník může kartu tam, kde toto ověření vyžadování není, ale i tak je to krok správným směrem.
 
 ### Steam
 
@@ -50,4 +50,4 @@ Správa účtu na webu Battle.netu ho po mně chce vyplnit pokaždé, v herních
 
 Doufám, že se tato praktika mezi poskytovateli služeb bude šířit. Jasní kandidáti, kteří ji zatím neimplementují, jsou Apple, Twitter, Dropbox, Amazon a další.
 
-PayPal by měl umět dvoufázovou autentizaci pomocí [VeriSign Identity Protection](https://idprotect.verisign.com/mainmenu.v), ale při snaze o spárování autentikátoru mi zahlásil chybu. Nejspíš ji ještě nepodporuje pro české účty.
+PayPal by měl umět dvoufázovou autentizaci pomocí [VeriSign Identity Protection](https://web.archive.org/web/20120823163805/https://idprotect.verisign.com/mainmenu.v), ale při snaze o spárování autentikátoru mi zahlásil chybu. Nejspíš ji ještě nepodporuje pro české účty.

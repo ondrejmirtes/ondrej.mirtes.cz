@@ -2,7 +2,7 @@
 title: Forget consoles, build yourself a Steambox!
 slug: forget-consoles-build-yourself-a-steambox
 date: 2012-11-30T22:28:00
-external_url: http://www.theverge.com/2012/11/30/3706718/forget-the-ps4-and-the-xbox-720-build-your-own-steambox-on-the-cheap
+external_url: https://web.archive.org/web/20121203012157/http://www.theverge.com:80/2012/11/30/3706718/forget-the-ps4-and-the-xbox-720-build-your-own-steambox-on-the-cheap
 guid: 9778d5d219c5080b9a6a17bef029331c
 ---
 

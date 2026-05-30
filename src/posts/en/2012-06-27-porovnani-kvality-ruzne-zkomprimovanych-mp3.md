@@ -2,7 +2,7 @@
 title: Comparing the quality of MP3s compressed at different bitrates
 slug: comparing-the-quality-of-mp3s-compressed-at-different-bitrates
 date: 2012-06-27T21:20:00
-external_url: http://www.codinghorror.com/blog/2012/06/concluding-the-great-mp3-bitrate-experiment.html
+external_url: https://web.archive.org/web/20120628225747/http://www.codinghorror.com:80/blog/2012/06/concluding-the-great-mp3-bitrate-experiment.html
 guid: 70efdf2ec9b086079795c442636b55fb
 ---
 

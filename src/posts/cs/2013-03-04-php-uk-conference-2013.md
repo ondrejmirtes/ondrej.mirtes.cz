@@ -1,7 +1,7 @@
 ---
 title: PHP UK Conference 2013
 date: 2013-03-04T20:56:00
-external_url: http://bobbyjason.co.uk/blog/176/php-uk-conference-2013/
+external_url: https://web.archive.org/web/20130314033720/http://bobbyjason.co.uk:80/blog/176/php-uk-conference-2013/
 guid: ac627ab1ccbdb62ec96e702f07f6425b
 ---
 
@@ -9,4 +9,4 @@ V únoru jsem se v Londýně zúčastnil této konference. Navzdory názvu se sp
 
 Většina přednášek byla pokročilého charakteru a týkala se zajímavých technologií. Nemusel jsem tedy postopadesáté poslouchat, že mám srozumitelně pojmenovávat proměnné a jak napíšu svůj první unit test.
 
-Jelikož jsem našel [shrnutí](http://bobbyjason.co.uk/blog/176/php-uk-conference-2013/) většiny přednášek, na kterých jsem byl, nebudu se tu opakovat. A jsem si téměř jistý, že za rok pojedu do Londýna zas.
+Jelikož jsem našel [shrnutí](https://web.archive.org/web/20130314033720/http://bobbyjason.co.uk:80/blog/176/php-uk-conference-2013/) většiny přednášek, na kterých jsem byl, nebudu se tu opakovat. A jsem si téměř jistý, že za rok pojedu do Londýna zas.

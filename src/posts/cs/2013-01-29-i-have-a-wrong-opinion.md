@@ -1,7 +1,7 @@
 ---
 title: I have a wrong opinion
 date: 2013-01-29T21:06:00
-external_url: http://juokaz.com/blog/i-have-a-wrong-opinion.html
+external_url: https://web.archive.org/web/20130424075103/http://juokaz.com:80/blog/i-have-a-wrong-opinion.html
 guid: 54229abfcfa5649e7003b83dd4755294
 ---
 

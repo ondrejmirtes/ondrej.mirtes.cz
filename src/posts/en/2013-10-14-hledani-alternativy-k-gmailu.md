@@ -39,7 +39,7 @@ Setting up two-factor authentication went without a hitch and is on a par with G
 
 I was pleasantly surprised by iOS's direct support for Outlook.com when adding the account to the system, so I didn't have to copy out any server names or ports. The built-in Mail app supports push notifications for Outlook.com, so I learn about an email immediately and not in fifteen-minute refresh intervals — something you can't say about Gmail.
 
-It's worse with importing emails. Microsoft itself [points](http://blogs.office.com/b/microsoft-outlook/archive/2012/08/09/upgrade-from-gmail-to-outlook-com-in-5-easy-steps.aspx) on its site to its own [TrueSwitch](https://secure5.trueswitch.com/hotmail/) service, which has, however, been discontinued. Emails can always be moved manually in an ordinary mail client thanks to IMAP, but I'd still rather leave that work to an automated tool.
+It's worse with importing emails. Microsoft itself [points](http://blogs.office.com/b/microsoft-outlook/archive/2012/08/09/upgrade-from-gmail-to-outlook-com-in-5-easy-steps.aspx) on its site to its own [TrueSwitch](https://web.archive.org/web/20140123032618/https://secure5.trueswitch.com/hotmail/) service, which has, however, been discontinued. Emails can always be moved manually in an ordinary mail client thanks to IMAP, but I'd still rather leave that work to an automated tool.
 
 The absence of a domain catch-all isn't a problem. When I looked into the catch-all in Google Apps for the very first time yesterday, 99% of the emails weren't meant for me — it was just spam. I can do without it.
 

@@ -1,7 +1,7 @@
 ---
 title: Oddychněte si na měsíc od Twitteru
 date: 2013-02-02T15:27:00
-external_url: http://adambrault.com/post/37201680402/i-quit-twitter-for-a-month-and-it-completely-changed-my
+external_url: https://web.archive.org/web/20130120102021/http://adambrault.com/post/37201680402/i-quit-twitter-for-a-month-and-it-completely-changed-my
 guid: 92cc227532d17e56e07902b254dfad10
 ---
 

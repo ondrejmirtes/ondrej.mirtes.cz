@@ -116,7 +116,7 @@ sudo apachectl restart
 brew install wget
 ```
 
-Zkopírujte si URL na stažené souboru selenium-server-standalone-*.jar z [tohoto seznamu](http://code.google.com/p/selenium/downloads/list) a použijte ji v příkazu wget:
+Zkopírujte si URL na stažené souboru selenium-server-standalone-*.jar z [tohoto seznamu](https://web.archive.org/web/20120909082029/http://code.google.com:80/p/selenium/downloads/list) a použijte ji v příkazu wget:
 
 ```bash
 sudo mkdir /usr/lib/selenium/

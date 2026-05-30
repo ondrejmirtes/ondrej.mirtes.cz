@@ -2,7 +2,7 @@
 title: Twin Peaks might return
 slug: twin-peaks-might-return
 date: 2013-01-03T20:39:00
-external_url: http://moviehole.net/201260661mark-frost-hints-at-possible-twin-peaks-return
+external_url: https://web.archive.org/web/20121227004157/http://moviehole.net:80/201260661mark-frost-hints-at-possible-twin-peaks-return
 guid: 7647966b7343c29048673252e490f736
 ---
 
