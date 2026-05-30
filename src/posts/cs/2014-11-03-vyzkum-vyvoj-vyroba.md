@@ -1,6 +1,6 @@
 ---
 title: Výzkum, vývoj, výroba
-external_url: http://www.knesl.com/articles/view/jak-se-lisi-ruzne-druhy-vyvoje
+external_url: https://web.archive.org/web/20141108005633/http://www.knesl.com:80/articles/view/jak-se-lisi-ruzne-druhy-vyvoje
 ---
 
 Jirka Knesl rozděluje vývoj software na tři druhy:

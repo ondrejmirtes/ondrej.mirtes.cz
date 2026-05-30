@@ -1,7 +1,7 @@
 ---
 title: Kód není to jediné, co by se mělo pravidelně refaktorovat
 date: 2013-07-09T11:21:00
-external_url: http://codemanship.co.uk/parlezuml/blog/?postid=1172
+external_url: https://web.archive.org/web/20130823164106/http://codemanship.co.uk:80/parlezuml/blog/?postid=1172
 guid: 2b44928ae11fb9384c4cf38708677c48
 ---
 

@@ -5,7 +5,7 @@ date: 2012-09-15T11:12:00
 guid: 2838023a778dfaecdc212708f721b788
 ---
 
-The Mac does come with PHP preinstalled, but it's awkward to work with - for instance, it's hard to add further extensions to it (such as gettext). It's therefore more convenient to manage your own PHP installation. We'll use the [Homebrew](http://mxcl.github.com/homebrew/) package manager for that, which also lets you install a whole range of other CLI tools.
+The Mac does come with PHP preinstalled, but it's awkward to work with - for instance, it's hard to add further extensions to it (such as gettext). It's therefore more convenient to manage your own PHP installation. We'll use the [Homebrew](https://brew.sh/) package manager for that, which also lets you install a whole range of other CLI tools.
 
 If you're just getting started with the Mac, I also recommend reading through [a few tips and tricks for Mac OS X](/en/tips-for-using-mac-os-x).
 

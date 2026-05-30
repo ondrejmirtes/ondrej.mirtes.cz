@@ -1,7 +1,7 @@
 ---
 title: Merlin Mann o životě, vesmíru a vůbec
 date: 2013-11-21T22:37:00
-external_url: http://thegreatdiscontent.com/merlin-mann
+external_url: https://web.archive.org/web/20131113190506/http://thegreatdiscontent.com/merlin-mann
 guid: 07e1cd7dca89a1678042477183b7ac3f
 ---
 

@@ -7,4 +7,4 @@ guid: a5771bce93e200c36f7cd9dfd0e5deaa
 
 Můj dlouholetý kamarád a spolehlivý brněnský hoteliér (když jednou za rok při Barcampu potřebuju někde přespat) Tomáš Vrabec popisuje svůj switcherský příběh.
 
-Pro ilustraci, co si myslím o diskusi pod článkem, si pusťte prvních [dvacet vteřin z této epizody Amplified](http://5by5.tv/amplified/20).
+Pro ilustraci, co si myslím o diskusi pod článkem, si pusťte prvních [dvacet vteřin z této epizody Amplified](https://web.archive.org/web/20120818154338/http://5by5.tv:80/amplified/20).

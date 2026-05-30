@@ -1,7 +1,7 @@
 ---
 title: PHP is much better than you think
 date: 2012-07-04T23:58:00
-external_url: http://fabien.potencier.org/article/64/php-is-much-better-than-what-you-think
+external_url: https://web.archive.org/web/20120706005649/http://fabien.potencier.org:80/article/64/php-is-much-better-than-what-you-think
 guid: 1f0e3dad99908345f7439f8ffabdffc4
 ---
 

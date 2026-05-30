@@ -4,7 +4,7 @@ date: 2012-09-15T11:12:00
 guid: 2838023a778dfaecdc212708f721b788
 ---
 
-Na Macu je sice už předinstalované PHP, ale špatně se s ním pracuje - např. se do něj těžko přidávají další rozšíření (třeba gettext). Je tedy pohodlnější spravovat vlastní instalaci PHP. Použijeme k tomu balíčkovací systém [Homebrew](http://mxcl.github.com/homebrew/), pomocí kterého se dá instalovat i řada dalších CLI nástrojů.
+Na Macu je sice už předinstalované PHP, ale špatně se s ním pracuje - např. se do něj těžko přidávají další rozšíření (třeba gettext). Je tedy pohodlnější spravovat vlastní instalaci PHP. Použijeme k tomu balíčkovací systém [Homebrew](https://brew.sh/), pomocí kterého se dá instalovat i řada dalších CLI nástrojů.
 
 Pokud s Macem začínáte, doporučuji si pročíst také [pár tipů a triků pro Mac OS X](/tipy-k-pouzivani-mac-osx).
 
