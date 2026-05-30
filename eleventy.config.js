@@ -68,6 +68,8 @@ function buildArchives(postsAsc, lang) {
     return {
       year: g.isOlder ? t.older : g.year,
       slug,
+      // Language-neutral key so cs/en archive pages can be paired.
+      key: g.isOlder ? "older" : String(g.year),
       url: `${t.archiveBase}/${slug}/`,
       title: t.archiveTitle(titleShort),
       titleShort,
@@ -124,6 +126,13 @@ export default function (eleventyConfig) {
     "findByFileSlug",
     (collection, fileSlug) =>
       collection.find((p) => p.fileSlug === fileSlug) || null
+  );
+
+  // Find the archive group with a given language-neutral key (e.g. "2016",
+  // "older") — used to pair cs/en archive pages for the language switcher.
+  eleventyConfig.addFilter(
+    "archiveByKey",
+    (list, key) => list.find((a) => a.key === key) || null
   );
 
   eleventyConfig.addFilter("isoDate", (date) =>

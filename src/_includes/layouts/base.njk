@@ -9,7 +9,9 @@
 {%- set otherLang = "en" if lang == "cs" else "cs" -%}
 {%- set otherPosts = collections.postsEn if otherLang == "en" else collections.postsCs -%}
 {%- set counterpart = (otherPosts | findByFileSlug(page.fileSlug)) if isPost else null -%}
-{%- set mirrorUrl = i18n[otherLang].home if active == "homepage" else (i18n[otherLang].aboutUrl if active == "about" else ((counterpart.url | noHtml) if counterpart else null)) -%}
+{%- set otherArchives = collections.archivesEn if otherLang == "en" else collections.archivesCs -%}
+{%- set archiveCounterpart = (otherArchives | archiveByKey(archiveKey)) if isArchive else null -%}
+{%- set mirrorUrl = i18n[otherLang].home if active == "homepage" else (i18n[otherLang].aboutUrl if active == "about" else ((archiveCounterpart.url | noHtml) if archiveCounterpart else ((counterpart.url | noHtml) if counterpart else null))) -%}
 <!doctype html>
 <html lang="{{ t.htmlLang }}">
 <head>

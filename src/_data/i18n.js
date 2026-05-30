@@ -39,7 +39,7 @@ export default {
     langName: "English",
     home: "/en/",
     aboutUrl: "/en/about",
-    archiveBase: "/en/archiv",
+    archiveBase: "/en/archive",
     feedUrl: "/en/rss",
     nav: { home: "Homepage", archive: "Archive", about: "About" },
     a11y: {

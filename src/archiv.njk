@@ -11,6 +11,7 @@ permalink: "{{ archive.url }}index.html"
 eleventyComputed:
   title: "{{ archive.title }}"
   archiveSlug: "{{ archive.slug }}"
+  archiveKey: "{{ archive.key }}"
 ---
 {% import "article.njk" as art %}
 {%- set t = i18n[lang] -%}
