@@ -86,6 +86,9 @@ function buildArchives(postsAsc, lang) {
 }
 
 export default function (eleventyConfig) {
+  // CLAUDE.md files are authoring guides, not content.
+  eleventyConfig.ignores.add("**/CLAUDE.md");
+
   // ---- Assets / bundler ----------------------------------------------------
   eleventyConfig.addPassthroughCopy({ "src/assets": "/assets" });
   eleventyConfig.addPassthroughCopy({ public: "/" });
