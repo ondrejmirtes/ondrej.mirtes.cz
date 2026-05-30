@@ -31,3 +31,66 @@
     font-family: var(--font-mono);
   }
 }
+
+/* Footnote popovers (built dynamically in main.js) */
+.fn-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  padding: 3px 7px;
+  margin: 0 2px;
+  border: 0;
+  border-radius: 6px;
+  background: #9aa0a4;
+  color: #fff;
+  line-height: 0;
+  cursor: pointer;
+}
+.fn-marker svg {
+  fill: currentColor;
+  display: block;
+}
+.fn-marker:hover,
+.fn-marker.is-active {
+  background: var(--color-header);
+}
+
+.fn-popover {
+  position: absolute;
+  z-index: 50;
+  max-width: min(360px, calc(100vw - 16px));
+  width: max-content;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: var(--color-header);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.55;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+.fn-popover::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: var(--arrow, 50%);
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid var(--color-header);
+}
+.fn-popover p {
+  margin: 0;
+}
+.fn-popover p + p {
+  margin-top: 0.6em;
+}
+.fn-popover a,
+.fn-popover a:visited {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.fn-popover a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
