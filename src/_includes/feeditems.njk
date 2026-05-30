@@ -1,0 +1,23 @@
+{# Renders <item> entries for the four feed variants, mirroring the original
+   rss.rss / rss-alt.rss / rss-twitter.rss / rss-weblogy.rss templates.
+   variant: "main" | "alt" | "twitter" | "weblogy" #}
+{% macro items(posts, site, variant, limit) %}
+{%- for post in posts | limit(limit) -%}
+{%- set canonical = site.baseurl + (post.url | noHtml) -%}
+<item>
+<title>{% if (variant == "main" or variant == "twitter") and not post.data.external_url %}■ {% endif %}{{ post.data.title }}</title>
+<description>
+{%- if variant == "alt" and post.data.external_url %}
+&lt;p&gt;&lt;a href=&quot;{{ post.data.external_url }}&quot;&gt;{{ post.data.external_url }} →&lt;/a&gt;&lt;/p&gt;
+{%- endif %}
+{{ post.templateContent | escape }}
+{%- if variant == "main" or variant == "twitter" %}
+&lt;p&gt;&lt;a href=&quot;{{ canonical }}&quot;&gt;■&lt;/a&gt;&lt;/p&gt;
+{%- endif %}
+</description>
+<guid isPermaLink="false">{{ post.data.guid if post.data.guid else (post.url | noHtml) }}</guid>
+<pubDate>{{ post.date | rfc822 }}</pubDate>
+{% if variant == "main" and post.data.external_url %}<link>{{ post.data.external_url }}</link>{% else %}<link>{{ canonical }}</link>{% endif %}
+</item>
+{%- endfor -%}
+{% endmacro %}

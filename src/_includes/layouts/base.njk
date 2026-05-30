@@ -1,0 +1,105 @@
+{%- set lang = lang or "cs" -%}
+{%- set t = i18n[lang] -%}
+{%- set archives = collections.archivesEn if lang == "en" else collections.archivesCs -%}
+{%- set isPost = "/posts/" in page.inputPath -%}
+{%- set pageTitle = (site.name if title == site.name else title + " | " + site.name) -%}
+{%- set metaDesc = (content | excerpt(50)) if isPost else site.description -%}
+{%- set canonical = (t.home if active == "homepage" else (page.url | noHtml)) -%}
+<!doctype html>
+<html lang="{{ t.htmlLang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ metaDesc }}">
+  <meta property="og:image" content="/apple-touch-icon-precomposed.png">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:url" content="{{ site.baseurl }}{{ canonical }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:type" content="blog">
+  <meta property="og:description" content="{{ metaDesc }}">
+  <meta name="twitter:site" content="@OndrejMirtes">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ metaDesc }}">
+  <meta name="twitter:image" content="{{ site.baseurl }}/apple-touch-icon-precomposed.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,italic,bold&amp;subset=latin,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,italic,bold&amp;subset=latin,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+  <link href="{{ t.feedUrl }}" rel="alternate" type="application/rss+xml" title="RSS">
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <header class="bg-[#353a3d]">
+    <div class="relative max-w-[850px] mx-auto px-4 text-center">
+      <a href="{{ t.home }}" rel="home" title="{{ t.nav.home }}" class="inline-block py-12 border-0">
+        <img src="/gfx/logo-new.png" alt="{{ site.name }}" width="276" height="44" class="mx-auto max-w-full h-auto">
+      </a>
+      <a href="https://twitter.com/OndrejMirtes" title="Twitter"
+         class="absolute left-1/2 -bottom-5 -ml-5 flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#353a3d] hover:text-[#db311a] border-0">
+        <span class="sr-only">Twitter</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.78l-5.31-6.94L4.84 22H1.58l8.02-9.17L1 2h6.94l4.8 6.34L18.244 2Zm-1.19 18h1.83L7.03 3.9H5.06L17.054 20Z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="grow w-full max-w-[850px] mx-auto px-4 py-10 flex flex-col min-[850px]:flex-row gap-8">
+
+    <aside class="min-[850px]:order-1 min-[850px]:w-40 min-[850px]:shrink-0">
+      <nav id="navigation" class="min-[850px]:text-right text-center">
+        <ul class="text-2xl leading-10 flex flex-wrap justify-center gap-x-6 min-[850px]:block">
+          <li><a href="{{ t.home }}" class="border-0 {{ 'text-[#c41700]' if active == 'homepage' else 'text-[#333] hover:text-[#c41700]' }}">{{ t.nav.home }}</a></li>
+          <li>
+            <a href="{{ (archives | last).url if archives | length else t.archiveBase }}" class="border-0 {{ 'text-[#c41700]' if isArchive else 'text-[#333] hover:text-[#c41700]' }}">{{ t.nav.archive }}</a>
+            {% if isArchive %}
+              <ul class="hidden min-[850px]:block text-lg leading-8">
+                {% for a in archives | reverse %}
+                  <li><a href="{{ a.url }}" class="border-0 {{ 'text-[#c41700]' if a.slug == archiveSlug else 'text-[#333] hover:text-[#c41700]' }}"><span class="text-sm text-[#c41700]">({{ a.count }})</span> {{ a.year }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+          <li><a href="{{ t.aboutUrl }}" class="border-0 {{ 'text-[#c41700]' if active == 'about' else 'text-[#333] hover:text-[#c41700]' }}">{{ t.nav.about }}</a></li>
+        </ul>
+
+        {% if isArchive %}
+          <form class="mt-4 min-[850px]:hidden" action="" method="get">
+            <select id="frm-archiveForm" class="w-2/3 mx-auto block px-3 py-2 border border-[#dde1e3] text-base">
+              {% for a in archives | reverse %}
+                <option value="{{ a.url }}" {{ 'selected' if a.slug == archiveSlug }}>{{ a.titleShort }} ({{ a.count }})</option>
+              {% endfor %}
+            </select>
+          </form>
+        {% endif %}
+      </nav>
+    </aside>
+
+    <section id="content" class="min-[850px]:order-2 min-[850px]:w-[666px] grow">
+      {{ content | safe }}
+    </section>
+
+  </div>
+
+  <footer class="border-t border-[#dde1e3] text-center text-[15px] text-[#2a2f33] py-5">
+    &copy; 2012&ndash;{{ site.buildTime | year }} {{ site.name }} | <a href="{{ t.feedUrl }}" class="border-b border-[#a5abae] hover:text-[#db311a] hover:border-[#db311a]">RSS</a>
+  </footer>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script>
+  (function(f, a, t, h, o, m){
+  a[h]=a[h]||function(){
+  (a[h].q=a[h].q||[]).push(arguments)
+  };
+  o=f.createElement('script'),
+  m=f.getElementsByTagName('script')[0];
+  o.async=1; o.src=t; o.id='fathom-script';
+  m.parentNode.insertBefore(o,m)
+  })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+  fathom('set', 'siteId', 'IMJZBKJY');
+  fathom('trackPageview');
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+lang: cs
+active: homepage
+title: Ondřej Mirtes
+---
+{% import "article.njk" as art %}
+{%- set t = i18n[lang] -%}
+
+{% for post in collections.postsCs | limit(site.homepageLimit) %}
+  {{ art.article(post.data.title, post.data.external_url, post.url | noHtml, post.date, post.templateContent, true) }}
+{% endfor %}
+
+<p class="text-right text-[17px] text-[#666] mt-4">
+  <a href="{{ (collections.archivesCs | last).url }}" class="border-0 hover:text-[#c41700]">{{ t.archiveLink }} &rsaquo;</a>
+</p>

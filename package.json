@@ -1,0 +1,28 @@
+{
+  "name": "ondrej-mirtes-cz",
+  "version": "2.0.0",
+  "description": "ondrej.mirtes.cz — personal blog (Eleventy + Vite + Tailwind)",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@11ty/eleventy-plugin-vite": "^8.0.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.3.0",
+    "luxon": "^3.7.2",
+    "markdown-it-footnote": "^4.0.0",
+    "prismjs": "^1.30.0",
+    "tailwindcss": "^4.3.0",
+    "vite": "^8.0.14"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  }
+}

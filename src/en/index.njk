@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+active: homepage
+title: Ondřej Mirtes
+permalink: /en/index.html
+---
+{% import "article.njk" as art %}
+{%- set t = i18n[lang] -%}
+
+{% for post in collections.postsEn | limit(site.homepageLimit) %}
+  {{ art.article(post.data.title, post.data.external_url, post.url | noHtml, post.date, post.templateContent, true) }}
+{% endfor %}
+
+{% if collections.archivesEn | length %}
+<p class="text-right text-[17px] text-[#666] mt-4">
+  <a href="{{ (collections.archivesEn | last).url }}" class="border-0 hover:text-[#c41700]">{{ t.archiveLink }} &rsaquo;</a>
+</p>
+{% endif %}

@@ -1,0 +1,25 @@
+---
+pagination:
+  data: collections.archivesEn
+  size: 1
+  alias: archive
+layout: layouts/base.njk
+active: archive
+isArchive: true
+permalink: "{{ archive.url }}index.html"
+eleventyComputed:
+  title: "{{ archive.title }}"
+  archiveSlug: "{{ archive.slug }}"
+---
+{% import "article.njk" as art %}
+{%- set t = i18n[lang] -%}
+
+{% for post in archive.posts %}
+  {{ art.article(post.data.title, post.data.external_url, post.url | noHtml, post.date, post.templateContent, true) }}
+{% endfor %}
+
+{%- set nav = collections.archivesEn | archiveNav(archive.slug) -%}
+<p class="flex justify-between text-[17px] text-[#666] mt-4">
+  {% if nav.newer %}<a href="{{ nav.newer.url | noHtml }}" class="border-0 hover:text-[#c41700]">&lsaquo; {{ nav.newer.titleShort }}</a>{% else %}<a href="{{ t.home }}" class="border-0 hover:text-[#c41700]">&lsaquo; {{ t.homepageLink }}</a>{% endif %}
+  {% if nav.older %}<a href="{{ nav.older.url | noHtml }}" class="border-0 hover:text-[#c41700] text-right">{{ nav.older.titleShort }} &rsaquo;</a>{% endif %}
+</p>

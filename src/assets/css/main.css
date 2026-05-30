@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "prismjs/themes/prism.css";
+@plugin "@tailwindcss/typography";
+
+/* Design tokens approximating the original css/main.css */
+@theme {
+  --font-sans: "Open Sans", Helvetica, Arial, sans-serif;
+  --font-mono: "Inconsolata", Courier, "Courier New", monospace;
+
+  --color-ink: #2a2f33; /* body text */
+  --color-heading: #c41700; /* red headings */
+  --color-accent: #db311a; /* link hover / accent */
+  --color-header: #353a3d; /* dark header bar */
+  --color-line: #dde1e3; /* hairline borders */
+  --color-muted: #999999; /* dates, secondary */
+  --color-codebg: #efefef; /* inline code / pre bg */
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background-color: #fff;
+    line-height: 1.85;
+  }
+  code,
+  pre {
+    font-family: var(--font-mono);
+  }
+}

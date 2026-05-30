@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+{% import "article.njk" as art %}
+{%- set posts = collections.postsEn if lang == "en" else collections.postsCs -%}
+{%- set prevpost = posts | newerPost(page.url) -%}
+{%- set nextpost = posts | olderPost(page.url) -%}
+
+{{ art.article(title, external_url, page.url | noHtml, page.date, content, false) }}
+
+{% if prevpost or nextpost %}
+<p class="flex justify-between text-[17px] text-[#666] mt-4">
+  {% if prevpost %}<a href="{{ prevpost.url | noHtml }}" class="border-0 hover:text-[#c41700]">&lsaquo; {{ prevpost.data.title }}</a>{% else %}<span></span>{% endif %}
+  {% if nextpost %}<a href="{{ nextpost.url | noHtml }}" class="border-0 hover:text-[#c41700] text-right">{{ nextpost.data.title }} &rsaquo;</a>{% endif %}
+</p>
+{% endif %}

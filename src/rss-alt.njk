@@ -1,0 +1,7 @@
+---
+layout: layouts/feed.njk
+lang: cs
+permalink: /rss-alt.rss
+---
+{% import "feeditems.njk" as feed %}
+{{ feed.items(collections.postsCs, site, "alt", site.homepageLimit) | safe }}
