@@ -2,19 +2,21 @@
    regular articles get an h2 (linked back to the post when `link`). #}
 {% macro article(title, externalUrl, cleanUrl, date, content, link) %}
 <article class="mb-12 pb-4 border-b border-[#dde1e3] last:border-0">
-  {% if externalUrl %}
-    <h3 class="mb-3 text-xl">
-      <a href="{{ externalUrl }}" class="text-[#c41700] hover:text-[#2a2f33]">{{ title }} <span aria-hidden="true">→</span></a>
-    </h3>
-  {% else %}
-    <h2 class="mb-3 text-[26px] leading-tight text-[#2a2f33]">
-      {% if link %}<a href="{{ cleanUrl }}" class="hover:text-[#db311a]">{{ title }}</a>{% else %}{{ title }}{% endif %}
-    </h2>
-  {% endif %}
+  <div class="flex justify-between items-start gap-5 mb-4">
+    {% if externalUrl %}
+      <h3 class="text-xl min-w-0">
+        <a href="{{ externalUrl }}" class="text-[#c41700] hover:text-[#2a2f33]">{{ title }} <span aria-hidden="true">→</span></a>
+      </h3>
+    {% else %}
+      <h2 class="text-[26px] leading-tight text-[#2a2f33] min-w-0">
+        {% if link %}<a href="{{ cleanUrl }}" class="hover:text-[#db311a]">{{ title }}</a>{% else %}{{ title }}{% endif %}
+      </h2>
+    {% endif %}
 
-  <time datetime="{{ date | isoDate }}" class="block mb-4 text-[15px] text-[#999]">
-    <a href="{{ cleanUrl }}" class="text-[#999] hover:text-[#999] border-b border-transparent hover:border-[#b7bfc4]">{{ date | postDate }}</a>
-  </time>
+    <time datetime="{{ date | isoDate }}" class="shrink-0 mt-1.5 text-[15px] text-[#999] whitespace-nowrap">
+      <a href="{{ cleanUrl }}" class="text-[#999] border-b border-transparent hover:border-[#b7bfc4]">{{ date | postDate }}</a>
+    </time>
+  </div>
 
   <div class="prose max-w-none
       prose-headings:text-[#c41700] prose-headings:font-normal
