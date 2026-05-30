@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "test": "node --test",
     "synth": "cdk synth",
     "diff": "cdk diff",
     "deploy": "cdk deploy"
