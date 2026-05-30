@@ -1,0 +1,8 @@
+---
+title: 'Debugging PHPStan Performance: Identify Slow Files'
+slug: debugging-performance-identify-slow-files
+date: 2024-07-05
+external_url: https://phpstan.org/blog/debugging-performance-identify-slow-files
+---
+
+> If you feel like PHPStan could be faster when analysing your project, you can debug what’s actually making it slow. Usually the cause of slow analysis can be pinpointed to a single file or a handful of files in a project that make PHPStan’s analysis crawl to a halt.
