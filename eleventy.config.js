@@ -118,6 +118,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("noHtml", noHtml);
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
+  // Find a post's translation counterpart: cs and en versions share a fileSlug
+  // because the translation keeps the Czech filename.
+  eleventyConfig.addFilter(
+    "findByFileSlug",
+    (collection, fileSlug) =>
+      collection.find((p) => p.fileSlug === fileSlug) || null
+  );
+
   eleventyConfig.addFilter("isoDate", (date) =>
     DateTime.fromJSDate(date, { zone: "Europe/Prague" }).toFormat("yyyy-LL-dd")
   );

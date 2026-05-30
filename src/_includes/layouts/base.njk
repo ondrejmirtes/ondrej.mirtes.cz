@@ -5,6 +5,11 @@
 {%- set pageTitle = (site.name if title == site.name else title + " | " + site.name) -%}
 {%- set metaDesc = (content | excerpt(50)) if isPost else site.description -%}
 {%- set canonical = (t.home if active == "homepage" else (page.url | noHtml)) -%}
+{# Language switcher: show a link to the mirror page when one exists. #}
+{%- set otherLang = "en" if lang == "cs" else "cs" -%}
+{%- set otherPosts = collections.postsEn if otherLang == "en" else collections.postsCs -%}
+{%- set counterpart = (otherPosts | findByFileSlug(page.fileSlug)) if isPost else null -%}
+{%- set mirrorUrl = i18n[otherLang].home if active == "homepage" else (i18n[otherLang].aboutUrl if active == "about" else ((counterpart.url | noHtml) if counterpart else null)) -%}
 <!doctype html>
 <html lang="{{ t.htmlLang }}">
 <head>
@@ -50,6 +55,11 @@
 
     <aside class="min-[850px]:order-1 min-[850px]:w-40 min-[850px]:shrink-0">
       <nav id="navigation" class="min-[850px]:text-right text-center">
+        {% if mirrorUrl %}
+          <p class="mb-5 min-[850px]:text-right text-center">
+            <a href="{{ mirrorUrl }}" class="inline-block text-sm text-[#999] border-b border-[#dde1e3] hover:text-[#c41700] hover:border-[#c41700]">{{ i18n[otherLang].langName }} &rarr;</a>
+          </p>
+        {% endif %}
         <ul class="text-2xl leading-10 flex flex-wrap justify-center gap-x-6 min-[850px]:block">
           <li><a href="{{ t.home }}" class="border-0 {{ 'text-[#c41700]' if active == 'homepage' else 'text-[#333] hover:text-[#c41700]' }}">{{ t.nav.home }}</a></li>
           <li>

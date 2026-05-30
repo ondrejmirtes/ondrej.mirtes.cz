@@ -6,6 +6,7 @@ export default {
     locale: "cs",
     prefix: "", // URL prefix; Czech is unprefixed
     htmlLang: "cs",
+    langName: "Čeština",
     // routes
     home: "/",
     aboutUrl: "/o-mne",
@@ -35,6 +36,7 @@ export default {
     locale: "en",
     prefix: "/en",
     htmlLang: "en",
+    langName: "English",
     home: "/en/",
     aboutUrl: "/en/about",
     archiveBase: "/en/archiv",
