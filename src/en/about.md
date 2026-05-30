@@ -5,7 +5,7 @@ title: About
 permalink: /en/about.html
 ---
 
-<div class="prose max-w-none prose-headings:text-[#c41700] prose-headings:font-normal prose-a:text-[#2a2f33] prose-a:no-underline prose-a:border-b prose-a:border-[#a5abae] hover:prose-a:text-[#db311a] hover:prose-a:border-[#db311a]" markdown="1">
+<div class="prose max-w-none prose-headings:text-[#c41700] prose-headings:font-normal prose-a:text-[#2a2f33] prose-a:no-underline prose-a:border-b prose-a:border-[#a5abae] prose-a:hover:text-[#db311a] prose-a:hover:border-[#db311a]" markdown="1">
 
 A developer with a passion for tested code, Apple, computer games, travel and caffeine.
 
