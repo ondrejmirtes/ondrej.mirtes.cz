@@ -1,5 +1,6 @@
 ---
 title: Get rid of branches in your code with promises
+slug: get-rid-of-conditions-with-promises
 ---
 
 I don't like branchy code. More branches (`if`/`elseif`/`else`) mean more combinations to test, more complicated and more fragile code. Long chains of ifs can be [removed using polymorphism](https://sourcemaking.com/refactoring/replace-conditional-with-polymorphism) — that's a well-known and, I believe, sufficiently established technique.
