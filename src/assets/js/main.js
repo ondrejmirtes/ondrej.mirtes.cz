@@ -29,8 +29,10 @@ if (archiveForm) {
     marker = null;
   }
 
-  function contentFor(href) {
-    const li = document.getElementById(href.replace(/^#/, ""));
+  // Scope the lookup to the post's own <article>: on listing pages each post
+  // restarts its footnote numbering, so ids like "fn1" collide across posts.
+  function contentFor(scope, href) {
+    const li = scope.querySelector('[id="' + href.replace(/^#/, "") + '"]');
     if (!li) return "";
     const clone = li.cloneNode(true);
     clone.querySelectorAll(".footnote-backref").forEach((b) => b.remove());
@@ -62,7 +64,8 @@ if (archiveForm) {
   refs.forEach((ref) => {
     const link = ref.querySelector("a");
     if (!link) return;
-    const html = contentFor(link.getAttribute("href"));
+    const scope = ref.closest("article") || document;
+    const html = contentFor(scope, link.getAttribute("href"));
     const num = link.textContent.replace(/[^\d]/g, "");
 
     const btn = document.createElement("button");
@@ -78,8 +81,11 @@ if (archiveForm) {
     ref.replaceWith(btn);
   });
 
-  const list = document.querySelector(".footnotes");
-  if (list) list.style.display = "none";
+  // Hide the dumped footnotes list AND its separator <hr>, for every post on
+  // the page (listing pages render several).
+  document
+    .querySelectorAll(".footnotes, .footnotes-sep")
+    .forEach((el) => (el.style.display = "none"));
 
   document.addEventListener("click", (e) => {
     if (popover && !popover.contains(e.target)) close();
