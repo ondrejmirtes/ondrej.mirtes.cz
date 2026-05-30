@@ -1,5 +1,11 @@
 @import "tailwindcss";
 @import "prismjs/themes/prism.css";
+/* Self-hosted fonts (was Google Fonts). woff2 bundled by Vite; latin + latin-ext. */
+@import "@fontsource/open-sans/400.css";
+@import "@fontsource/open-sans/400-italic.css";
+@import "@fontsource/open-sans/700.css";
+@import "@fontsource/inconsolata/400.css";
+@import "@fontsource/inconsolata/700.css";
 @plugin "@tailwindcss/typography";
 
 /* Design tokens approximating the original css/main.css */
