@@ -6,3 +6,5 @@ _site
 test-results
 playwright-report
 /screenshots
+
+.amp/portals/

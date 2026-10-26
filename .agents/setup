@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Prepares a fresh Amp orb: installs npm dependencies for the site and infra/,
+# plus Playwright's Chromium for responsive checks. Idempotent; fast when warm.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+step() {
+  local label=$1; shift
+  echo "==> $label"
+  local start=$SECONDS
+  "$@"
+  echo "    done in $((SECONDS - start))s"
+}
+
+# npm ci installs exactly what the lockfiles pin and never rewrites them.
+step "Site dependencies" npm ci --no-audit --no-fund --prefer-offline
+step "Infra dependencies" npm ci --no-audit --no-fund --prefer-offline --prefix infra
+step "Playwright Chromium" npx --no-install playwright install chromium
