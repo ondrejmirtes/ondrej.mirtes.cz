@@ -89,7 +89,8 @@ pushes to `eleventy` (or manually via *Run workflow*):
 
 They authenticate with **GitHub OIDC**, so there are no AWS secrets in the repo.
 The `OndrejMirtesCzGithubDeploy` stack (`lib/github-deploy-stack.ts`) creates
-the OIDC provider and two roles that only workflows on the `eleventy` branch of
+two roles, trusting the account's existing `token.actions.githubusercontent.com`
+OIDC provider, that only workflows on the `eleventy` branch of
 `ondrejmirtes/ondrej.mirtes.cz` can assume:
 
 - `github-deploy-infra` — may only assume the CDK bootstrap roles.
@@ -102,10 +103,6 @@ credentials:
 ```sh
 cd infra && npx cdk deploy --all
 ```
-
-If the account already has an IAM OIDC provider for
-`token.actions.githubusercontent.com`, this fails on the duplicate provider;
-delete the old provider or import it in `github-deploy-stack.ts` instead.
 
 ## How this replaces the old setup
 
