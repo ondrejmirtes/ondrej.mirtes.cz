@@ -16,10 +16,10 @@ export class GithubDeployStack extends Stack {
   constructor(scope: Construct, id: string, props: GithubDeployStackProps) {
     super(scope, id, props);
 
-    const provider = new iam.OidcProviderNative(this, 'GithubOidcProvider', {
-      url: 'https://token.actions.githubusercontent.com',
-      clientIds: ['sts.amazonaws.com'],
-    });
+    // The account already has the GitHub OIDC provider (an account can have
+    // only one per URL), so reference it instead of creating it.
+    const provider = iam.OidcProviderNative.fromOidcProviderArn(this, 'GithubOidcProvider',
+      `arn:aws:iam::${this.account}:oidc-provider/token.actions.githubusercontent.com`);
 
     const principal = new iam.OpenIdConnectPrincipal(provider, {
       StringEquals: {
