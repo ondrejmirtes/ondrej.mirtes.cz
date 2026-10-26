@@ -8,6 +8,10 @@ certificates must be there). Stack name: `OndrejMirtesCzSite`.
 - **Infrastructure** is this CDK app — `cdk deploy`.
 - **Content** is the built site — `../deploy-content.sh`.
 
+Both run automatically from GitHub Actions on pushes to `eleventy` (see
+[Continuous deployment](#continuous-deployment)); the commands below are for
+manual runs.
+
 The CDK stack does **not** upload site content; it only provisions the bucket,
 CDN, certs, functions and DNS. That keeps an infra change from forcing a
 content redeploy and vice-versa.
@@ -39,8 +43,8 @@ Edit the CDK (`lib/site-stack.ts`, `cloudfront/*.js`) and:
 cd infra
 npm install            # first time
 npm test               # tests for the rewrite function
-npx cdk diff           # review the change
-npx cdk deploy
+npx cdk diff --all     # review the change
+npx cdk deploy --all
 ```
 
 This never touches site content.
@@ -69,9 +73,39 @@ cd infra && npm install && npx cdk bootstrap aws://928192134594/us-east-1
 # initial ondrej.mirtes.cz cutover this was the old CNAME; for mirtes.cz /
 # www.mirtes.cz it's the apex A/AAAA + the www CNAME.
 
-npx cdk deploy        # creates everything (infra only)
+npx cdk deploy --all  # creates everything (infra only)
 cd .. && ./deploy-content.sh   # then push content
 ```
+
+## Continuous deployment
+
+Two workflows in `.github/workflows/`, each triggered only by its own files on
+pushes to `eleventy` (or manually via *Run workflow*):
+
+| Workflow | Runs when these change | Does |
+| --- | --- | --- |
+| `deploy-infra.yml` | `infra/**` (except this README) | `npm test`, `cdk deploy --all` |
+| `deploy-content.yml` | `src/**`, `public/**`, `eleventy.config.js`, `package*.json`, `deploy-content.sh` | `./deploy-content.sh` |
+
+They authenticate with **GitHub OIDC**, so there are no AWS secrets in the repo.
+The `OndrejMirtesCzGithubDeploy` stack (`lib/github-deploy-stack.ts`) creates
+the OIDC provider and two roles that only workflows on the `eleventy` branch of
+`ondrejmirtes/ondrej.mirtes.cz` can assume:
+
+- `github-deploy-infra` — may only assume the CDK bootstrap roles.
+- `github-deploy-content` — read the site stack outputs, read/write/delete in
+  the site bucket, invalidate the distribution.
+
+**One-time setup** (the roles must exist before CI can use them), with admin
+credentials:
+
+```sh
+cd infra && npx cdk deploy --all
+```
+
+If the account already has an IAM OIDC provider for
+`token.actions.githubusercontent.com`, this fails on the duplicate provider;
+delete the old provider or import it in `github-deploy-stack.ts` instead.
 
 ## How this replaces the old setup
 

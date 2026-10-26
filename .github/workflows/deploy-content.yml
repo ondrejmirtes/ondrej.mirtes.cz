@@ -1,0 +1,43 @@
+name: Deploy site content
+
+on:
+  push:
+    branches: [eleventy]
+    paths:
+      - 'src/**'
+      - '!**/CLAUDE.md'
+      - 'public/**'
+      - 'eleventy.config.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'deploy-content.sh'
+      - '.github/workflows/deploy-content.yml'
+  workflow_dispatch:
+
+permissions:
+  id-token: write # OIDC token for AWS
+  contents: read
+
+concurrency:
+  group: deploy-content
+  cancel-in-progress: false # let a running sync finish; the newest push runs next
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - run: npm ci
+
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::928192134594:role/github-deploy-content
+          aws-region: us-east-1
+
+      - run: ./deploy-content.sh
