@@ -19,6 +19,9 @@ const ZONE_NAME = 'mirtes.cz';
 const ZONE_ID = 'Z3DG4DJKE958FW';
 
 export class SiteStack extends Stack {
+  readonly bucket: s3.Bucket;
+  readonly distribution: cloudfront.Distribution;
+
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
@@ -36,7 +39,7 @@ export class SiteStack extends Stack {
     // Private bucket — only CloudFront reads it via Origin Access Control.
     // (The old setup used a public-read bucket; OAC is the modern, locked-down
     // equivalent.)
-    const bucket = new s3.Bucket(this, 'SiteBucket', {
+    const bucket = this.bucket = new s3.Bucket(this, 'SiteBucket', {
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       encryption: s3.BucketEncryption.S3_MANAGED,
       enforceSSL: true,
@@ -82,7 +85,7 @@ export class SiteStack extends Stack {
       },
     });
 
-    const distribution = new cloudfront.Distribution(this, 'Distribution', {
+    const distribution = this.distribution = new cloudfront.Distribution(this, 'Distribution', {
       domainNames: [DOMAIN],
       certificate,
       defaultRootObject: 'index.html',

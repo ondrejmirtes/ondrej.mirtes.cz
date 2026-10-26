@@ -1,0 +1,43 @@
+name: Deploy infrastructure
+
+on:
+  push:
+    branches: [eleventy]
+    paths:
+      - 'infra/**'
+      - '!infra/README.md'
+      - '.github/workflows/deploy-infra.yml'
+  workflow_dispatch:
+
+permissions:
+  id-token: write # OIDC token for AWS
+  contents: read
+
+concurrency:
+  group: deploy-infra
+  cancel-in-progress: false # never interrupt a CloudFormation deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infra
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: infra/package-lock.json
+
+      - run: npm ci
+      - run: npm test
+
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::928192134594:role/github-deploy-infra
+          aws-region: us-east-1
+
+      - run: npx cdk deploy --all --require-approval never
